@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "iron-maiden";
+  src: url(../Fonts/Metal\ Lord\ \(Iron\ Maiden\ Font\ 1\).ttf)
+}
+
+
+@font-face {
+font-family: "DM Serif Display";
+src: url(../Fonts/DMSerifDisplay-Regular.ttf);
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "DM Serif Display";
+src: url(../Fonts/DMSerifDisplay-Italic.ttf);
+font-weight: normal;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'Fredoka One';
+src: url(../Fonts/FredokaOne-Regular.ttf);
+}
+
+
+body{
+
+  background: #00010D;
+  min-height: 100vh;
+  color: black;
+} 
+
+h1{
+  font-family: iron-maiden, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 3px;
+  color: red;
+  -webkit-text-stroke: 1px rgb(211, 211, 211);
+  margin-bottom: 30px;
+ }
+
+.Accueil{
+ font-family: 'Fredoka One', cursive;
+  text-align: center;
+  font-size: 1.75rem;
+  border-style: solid;
+  border-color: rgb(194 17 17 / 96%);
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+#link-accueil {
+  padding: 5px;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: #f22727;
+  
+} 
+
+main{
+ font-family: 'DM Serif Display', serif;
+  min-height: 500px;
+
+  width: 95%;
+  background: #1C2226;
+  margin: 0 auto;
+  border: 2px solid #d60d45;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px 4px red;
+          box-shadow: 0 0 20px 4px red;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.grid{
+  display: -ms-grid;
+  display: grid; 
+  -ms-grid-columns: 70% 30%;
+  grid-template-columns: 70% 30%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+.grid img{
+ width: 97%;
+ justify-items: center;
+ -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+.grid li{
+  border: solid 2px #263131;
+  margin: 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+  
+}
+
+.grid li:hover{
+  background: black;
+}
+
+.grid a:hover{
+  color: red;
+}
+
+
+.Liens{
+  border-radius: 10%;
+  background: #4A5958;
+  
+}
+
+.Biographie, #Flexbox-Oeuvres, .Liens{
+  background: #4A5958 ;
+  border: 2px solid #d9072c;
+} 
+
+ h2{
+  color:#131e1e ;
+  text-decoration: underline;
+ margin: 0;
+
+}
+
+.Liens a {
+  color: black;
+  font-size: 1.5rem ;
+  text-align: justify;
+  display: -ms-grid;
+  display: grid;
+  place-items: center center;
+  height: 100px;
+  
+    
+}
+
+.Liens ul{
+  list-style-type: none;
+  padding: 20px;
+}
+
+
+
+.Biographie {
+
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+p{
+ font-size: 1.5rem ;
+ text-align: justify;
+ color: #590707;
+}
+
+
+
+#Flexbox-Oeuvres {
+ border-radius: 10px;
+ padding: 10px;
+ margin-top: 20px;
+ 
+}
+
+.flexbox {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-pack: distribute;
+     justify-content: space-around;
+ -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+}
+
+.flexbox div {
+ width: 30%;
+ text-align: center;
+}
+
+.flexbox img {
+ width: 100%;
+}
+
+h3 {
+ margin: 0;
+ font-size: 1.4rem;
+ color: #170b0b;
+}
+
+
+footer {
+ padding: 1em 0;
+ text-align: center;
+ 
+}
+
+hr {
+ border: 1px solid #512020;
+ margin: 1em 0;
+}
+
+footer h2{
+ text-decoration: none;
+ color: #5a5066;
+
+}
+
+
+
+@media screen and  (max-width: 1000px){
+  .grid{
+    display: block;
+  }
+
+  .grid img {
+    margin-bottom: 10px;
+  }
+  
+  .Liens h2{
+    text-align: center;
+  }
+}
+
+@media screen and  (max-width: 430px) {
+  .flexbox div {
+    width: 100%;
+  }
+
+  .flexbox h3{
+    margin: 10px;
+  }
+}
