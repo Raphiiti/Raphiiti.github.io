@@ -1,37 +1,34 @@
 @font-face {
   font-family: "iron-maiden";
-  src: url(../Fonts/Metal\ Lord\ \(Iron\ Maiden\ Font\ 1\).ttf)
-}
-
-
-@font-face {
-font-family: "DM Serif Display";
-src: url(../Fonts/DMSerifDisplay-Regular.ttf);
-font-weight: normal;
-font-style: normal;
+  src: url(../Fonts/iron-maiden.ttf);
 }
 
 @font-face {
-font-family: "DM Serif Display";
-src: url(../Fonts/DMSerifDisplay-Italic.ttf);
-font-weight: normal;
-font-style: italic;
+  font-family: "DM Serif Display";
+  src: url(../Fonts/DMSerifDisplay-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-font-family: 'Fredoka One';
-src: url(../Fonts/FredokaOne-Regular.ttf);
+  font-family: "DM Serif Display";
+  src: url(../Fonts/DMSerifDisplay-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
 }
 
+@font-face {
+  font-family: "Fredoka One";
+  src: url(../Fonts/FredokaOne-Regular.ttf);
+}
 
-body{
-
-  background: #00010D;
+body {
+  background: #00010d;
   min-height: 100vh;
   color: black;
-} 
+}
 
-h1{
+h1 {
   font-family: iron-maiden, sans-serif;
   font-size: 3rem;
   text-align: center;
@@ -39,10 +36,10 @@ h1{
   color: red;
   -webkit-text-stroke: 1px rgb(211, 211, 211);
   margin-bottom: 30px;
- }
+}
 
-.Accueil{
- font-family: 'Fredoka One', cursive;
+.Accueil {
+  font-family: "Fredoka One", cursive;
   text-align: center;
   font-size: 1.75rem;
   border-style: solid;
@@ -57,189 +54,169 @@ h1{
   padding: 5px;
 }
 
-a{
+a {
   display: block;
   text-decoration: none;
   color: #f22727;
-  
-} 
+}
 
-main{
- font-family: 'DM Serif Display', serif;
+main {
+  font-family: "DM Serif Display", serif;
   min-height: 500px;
 
   width: 95%;
-  background: #1C2226;
+  background: #1c2226;
   margin: 0 auto;
   border: 2px solid #d60d45;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px 4px red;
-          box-shadow: 0 0 20px 4px red;
+  /* -webkit-box-shadow: 0 0 20px 4px red;
+  box-shadow: 0 0 20px 4px red; */
   padding: 15px;
   margin-top: 30px;
+  margin-bottom: 2em;
 }
 
-.grid{
+.grid {
   display: -ms-grid;
-  display: grid; 
+  display: grid;
   -ms-grid-columns: 70% 30%;
   grid-template-columns: 70% 30%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
 }
 
-.grid img{
- width: 97%;
- justify-items: center;
- -webkit-box-align: center;
+.grid img {
+  width: 97%;
+  justify-items: center;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
 }
 
-.grid li{
+.grid li {
   border: solid 2px #263131;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: 0.2s;
-  
 }
 
-.grid li:hover{
+.grid li:hover {
   background: black;
 }
 
-.grid a:hover{
+.grid a:hover {
   color: red;
 }
 
-
-.Liens{
-  border-radius: 10%;
-  background: #4A5958;
-  
+.Liens {
+  border-radius: 20px;
+  background: #4a5958;
 }
 
-.Biographie, #Flexbox-Oeuvres, .Liens{
-  background: #4A5958 ;
+.Biographie,
+#Flexbox-Oeuvres,
+.Liens {
+  background: #4a5958;
   border: 2px solid #d9072c;
-} 
+}
 
- h2{
-  color:#131e1e ;
+h2 {
+  color: #131e1e;
   text-decoration: underline;
- margin: 0;
-
+  margin: 0;
 }
 
 .Liens a {
   color: black;
-  font-size: 1.5rem ;
+  font-size: 1.5rem;
   text-align: justify;
   display: -ms-grid;
   display: grid;
   place-items: center center;
   height: 100px;
-  
-    
 }
 
-.Liens ul{
+.Liens ul {
   list-style-type: none;
   padding: 20px;
 }
 
-
-
 .Biographie {
-
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
   margin-top: 20px;
 }
 
-p{
- font-size: 1.5rem ;
- text-align: justify;
- color: #590707;
+p {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #590707;
 }
 
-
-
 #Flexbox-Oeuvres {
- border-radius: 10px;
- padding: 10px;
- margin-top: 20px;
- 
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .flexbox {
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-pack: distribute;
-     justify-content: space-around;
- -ms-flex-wrap: wrap;
-     flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .flexbox div {
- width: 30%;
- text-align: center;
+  width: 30%;
+  text-align: center;
 }
 
 .flexbox img {
- width: 100%;
+  width: 100%;
 }
 
 h3 {
- margin: 0;
- font-size: 1.4rem;
- color: #170b0b;
+  margin: 0;
+  font-size: 1.4rem;
+  color: #170b0b;
 }
-
 
 footer {
- padding: 1em 0;
- text-align: center;
- 
+  padding: 1em 0;
+  text-align: center;
+  border-top: 1px solid #512020;
+  margin: 1em 0;
 }
 
-hr {
- border: 1px solid #512020;
- margin: 1em 0;
+footer h2 {
+  text-decoration: none;
+  color: #5a5066;
 }
 
-footer h2{
- text-decoration: none;
- color: #5a5066;
-
-}
-
-
-
-@media screen and  (max-width: 1000px){
-  .grid{
+@media screen and (max-width: 1000px) {
+  .grid {
     display: block;
   }
 
   .grid img {
     margin-bottom: 10px;
   }
-  
-  .Liens h2{
+
+  .Liens h2 {
     text-align: center;
   }
 }
 
-@media screen and  (max-width: 430px) {
+@media screen and (max-width: 430px) {
   .flexbox div {
     width: 100%;
   }
 
-  .flexbox h3{
+  .flexbox h3 {
     margin: 10px;
   }
 }
