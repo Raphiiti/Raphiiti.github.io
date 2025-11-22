@@ -1,0 +1,42 @@
+:root {
+    /* --- VARIABLES BOOTSTRAP (Écrasées) --- */
+    
+    /* 1. Ta couleur Violette (Hexa + RGB) */
+    --bs-primary: #9d8df1;
+    --bs-primary-rgb: 157, 141, 241;
+
+    /* 2. Ton fond de page Gris-Bleu */
+    --bs-body-bg: #e3e8ef; 
+}
+
+/* Application du fond */
+body {
+    background-color: var(--bs-body-bg) !important;
+}
+
+/* --- ARRIÈRE-PLANS (Backgrounds) --- */
+
+/* Ton Bleu Nuit pour Navbar & Footer */
+.bg-dark {
+    background-color: #1e2530 !important;
+}
+
+/* --- TEXTES (Bleu Ciel Pastel) --- */
+
+/* Appliqué au menu, logo et footer */
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link,
+.text-white-50 {
+    color: #CFE2FF !important;
+    opacity: 1 !important;
+}
+
+/* --- INTERACTIONS & ACCENTS (Violet) --- */
+
+/* Lien actif + Survol souris + Logo + Mail */
+.navbar-dark .nav-link.active,
+.navbar-dark .nav-link:hover,
+.navbar-dark .navbar-brand span,
+footer a {
+    color: var(--bs-primary) !important;
+}
