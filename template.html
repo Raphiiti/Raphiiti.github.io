@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
-    
+
     <!-- Importation de bootstrap et de mon fichier css pour affiner ma palette de couleurs -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body class="d-flex flex-column min-vh-100 bg-light">
-
+  <body class="d-flex flex-column min-vh-100 bg-light">
     <header>
-        <!-- Création Navbar Source : https://getbootstrap.com/docs/5.0/components/navbar/ -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3">
-            <div class="container">
-                <a class="navbar-brand fw-bold text" href="accueil.html"> SAÉ 104 <span class="text-primary">SE PRÉSENTER SUR INTERNET</span></a>
-                <!-- Boutton Pour transformer la navbar en menu hamburger lorsque le site est en moode mobile
+      <!-- Création Navbar Source : https://getbootstrap.com/docs/5.0/components/navbar/ -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold text" href="accueil.html">
+            SAÉ 104
+            <span class="text-primary">SE PRÉSENTER SUR INTERNET</span></a
+          >
+          <!-- Boutton Pour transformer la navbar en menu hamburger lorsque le site est en moode mobile
                  Source : https://themeselection.com/how-to-create-bootstrap-hamburger-menu/#h-what-is-bootstrap-hamburger-menu + Gemini pour debugger -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-uppercase small fw-bold gap-3">
-                        <li class="nav-item"><a class="nav-link active" href="accueil.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blason.html">Blason</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ppp.html">Projet Professionnel</a></li>
-                        
-                        <li class="nav-item"><a class="nav-link" href="carousel.html">Carousel</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cards.html">Cards</a></li>
-                        
-                        <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ressources.html">Ressources</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-uppercase small fw-bold gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blason.html">Blason</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ppp.html">Projet Professionnel</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="carousel.html">Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cards.html">Cards</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="timeline.html">Timeline</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ressources.html">Ressources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="flex-grow-1 d-flex align-items-center justify-content-center py-5"></main>
-    
-    <!-- Footer simple avec un copyright et mes coordonnées -->
-    <footer class="bg-dark text-white-50 text-center py-3 mt-auto ">
-        <div class="container small">
-            <p class="mb-0">
-                &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3 — 
-                <a href="mailto:raphael.bouchard@etudiant.univ-rennes.fr" class="text-primary">raphael.bouchard@etudiant.univ-rennes.fr</a>
-            </p>
-        </div>
-    </footer>
+    <main
+      class="flex-grow-1 d-flex align-items-center justify-content-center py-5"
+    ></main>
 
-</body>
+    <!-- Footer simple avec un copyright et mes coordonnées -->
+    <footer class="bg-dark text-white-50 text-center py-3 mt-auto">
+      <div class="container small">
+        <p class="mb-0">
+          &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3
+          —
+          <a
+            href="mailto:raphael.bouchard@etudiant.univ-rennes.fr"
+            class="text-primary"
+            >raphael.bouchard@etudiant.univ-rennes.fr</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
