@@ -71,13 +71,136 @@
     </header>
 
     <main
-      class="flex-grow-1 d-flex align-items-center justify-content-center py-5"
+      class="container d-flex align-items-center justify-content-center py-5"
     >
-      <div class="container text-center">
-        <div role="progressbar">
-          <h3 role="presentation">Title of my progressbar</h3>
-        </div>
-      </div>
+      <!-- Création du tableau des ressources
+           Source : https://getbootstrap.com/docs/5.0/content/tables/ -->
+      <table
+        class="table table-striped table-primary table-responsive caption-top table-hover"
+      >
+        <caption class="text-primary fw-bold">
+          Ressources Utilisées pour la création du site web
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Page</th>
+            <th scope="col">Fichier</th>
+            <th scope="col">% réalisation</th>
+            <th scope="col">Sources & références</th>
+            <th scope="col">Commentaires</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Accueil</td>
+            <td>accueil.html</td>
+            <td>100%</td>
+            <td>
+              Template : <br />
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="https://getbootstrap.com/docs/5.0/components/navbar/"
+                    target="_blank"
+                    >Création Navbar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://themeselection.com/how-to-create-bootstrap-hamburger-menu/#h-what-is-bootstrap-hamburger-menu"
+                    target="_blank"
+                    >Bouton Menu hamburger lorsque le site est en moode
+                    mobile</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gemini.google.com/u/1/app" target="_blank"
+                    >Défnition de la Direction artistique</a
+                  >
+                </li>
+              </ul>
+              <br />
+              Accueil : <br />
+              <a
+                href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php"
+                target="_blank"
+                >Doc Bootstrap Cards</a
+              >
+            </td>
+            <td>
+              J'ai commencé le projet par faire un template de ma page puis la
+              page d'accueil donc une partie des sources citées dans cette ligne
+              sont utilisées pour toutes les pages. <br />
+              Dans la partie hamburger ainsi que dans la partie cards, je me
+              suis principalement aidé de la documentation sauf que pour debug
+              quelques micro-fonctionnalités, j'ai utilisé Gemini. <br />De
+              plus, lorsque j'ai voulu changer les couleurs par défaut de
+              bootstrap, j'ai utilisé Gemini principalement pour trouver des
+              couleurs qui allaient bien par rapport à mes goûts et ce qui me
+              représente. Je n'ai utilisé que le css pour modifier les couleurs
+              des variables et classes bootstrap natives.
+            </td>
+          </tr>
+          <tr>
+            <td>2. CV</td>
+            <td>cv.html</td>
+            <td>0%</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>3. Blason</td>
+            <td>blason.html</td>
+            <td>0%</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>4. Projet professionnel</td>
+            <td>ppp.html</td>
+            <td>0%</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>5. Carousel</td>
+            <td>carousel.html</td>
+            <td>0%</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>6. Cards</td>
+            <td>cards.html</td>
+            <td>0%</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>7. Timeline</td>
+            <td>timeline.html</td>
+            <td>0%</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>8. Ressources</td>
+            <td>ressources.html</td>
+            <td>50%</td>
+            <td>
+              <a
+                href="https://getbootstrap.com/docs/5.0/content/tables/"
+                target="_blank"
+                >Doc Bootstrap sur les tableaux</a
+              >
+            </td>
+            <td>
+              Une partie assez rapide à effectuer car c'est basiquement ce que
+              nous devions faire lors de l'examen R109
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <!-- Footer simple avec un copyright et mes coordonnées -->
