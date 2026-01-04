@@ -77,7 +77,13 @@
                      => http://getbootstrap.com/docs/5.3/components/carousel/#basic-examples
                         Gemini pour les ratios et object-fit-contain ainsi que pour le débug sur les captions -->
 
-        <div id="monCarousel" class="carousel slide">
+        <!-- data-bs-ride="carousel" permet d'autoplay le carousel
+             carousel-dark permet de changer les touches de contrôle en sombre pour mieux les voir sur fond clair -->
+        <div
+          id="monCarousel"
+          class="carousel slide carousel-dark"
+          data-bs-ride="carousel"
+        >
           <!-- Indicateurs pour savoir où l'on est rendu dans le carousel -->
           <div class="carousel-indicators">
             <button
