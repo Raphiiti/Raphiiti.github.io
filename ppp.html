@@ -77,46 +77,207 @@
       </nav>
     </header>
 
-    <main
-      class="flex-grow-1 d-flex align-items-center justify-content-center py-5"
-    >
-      <div class="container text-center">
-        <div class="mb-4">
-          <span class="display-1">🚧</span>
+    <main class="flex-grow-1">
+      <!-- SECTION 1 — TITRE -->
+      <section
+        class="vh-100 d-flex align-items-center justify-content-center text-center"
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-4">
+            Mon Projet Professionnel Personnel
+          </h1>
+
+          <button
+            class="btn btn-danger btn-lg"
+            onclick="ScrollVersProchaineSection('section-ensibs')"
+          >
+            Découvrir mon projet
+          </button>
         </div>
+      </section>
 
-        <h1 class="display-5 fw-bold text-dark mb-3">
-          Page en <span class="text-primary">Construction</span>
-        </h1>
+      <!-- SECTION 2 — ENSIBS -->
+      <section id="section-ensibs" class="container py-5">
+        <h2 class="fw-bold mb-3">L’ENSIBS</h2>
 
-        <p class="lead text-secondary mb-5 mx-auto" style="max-width: 600px">
-          Je travaille actuellement sur cette section du site.<br />
-          Le contenu arrive très bientôt !
+        <img
+          src="./img/ppp-enisbs.png"
+          class="img-fluid rounded mb-3"
+          alt="École d’ingénieur"
+        />
+
+        <p>
+          Voici l'école d'Ingénieur que je souhaite rejoindre ! C'est l'ENSIBS !
+          C'est une école d'Ingénieur qui appartient à l'UBS (Université
+          Bretagne Sud). Elle se situe à Vannes, dans le Morbihan.
         </p>
 
-        <div
-          class="progress mb-5 mx-auto shadow-sm bg-white"
-          style="height: 10px; max-width: 300px"
-        >
-          <div
-            class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-            role="progressbar"
-            style="width: 40%"
-            aria-valuenow="40"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </div>
+        <p id="ensibs-plus" class="d-none">
+          Tout d'abord, je veux continuer dans une école d'ingénieur après avoir
+          obtenu mon BUT3 R&T pour avoir plus de diplômes, un métier plus haut
+          dans la hiérarchie et pouvoir m'offir de plus grandes opportunités
+          comme pouvoir faire le métier que je veux faire plus tard. Je veux
+          rejoindre cette école d'ingénieur car elle est spécialisée en
+          cybersécurité. Je souhaiterai faire le parcours Cyberdéfense. Si je ne
+          suis pas accepté dans cette école, j'aimerai rejoindre l'ESIR ou sinon
+          faire un Master cybersécurité à l'ISTIC à Rennes parcours sécurité
+          logicielle et matérielle.
+        </p>
 
-        <div>
-          <a
-            href="index.html"
-            class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold"
+        <button
+          class="btn btn-outline-secondary"
+          onclick="lirePlus('ensibs-plus')"
+        >
+          Lire plus
+        </button>
+
+        <div class="mt-4">
+          <button
+            class="btn btn-sm btn-success"
+            onclick="ScrollVersProchaineSection('section-reseaux')"
           >
-            Retour à l'accueil
-          </a>
+            Étape suivante
+          </button>
         </div>
-      </div>
+      </section>
+
+      <!-- SECTION 3 — ADMIN / INGÉNIEUR RÉSEAUX -->
+      <section id="section-reseaux" class="container py-5">
+        <h2 class="fw-bold mb-3">Administrateur / Ingénieur Réseaux</h2>
+
+        <img
+          src="./img/ppp-administrateur-reseau.jpg"
+          class="img-fluid rounded mb-3 w-50"
+          alt="Réseaux informatiques"
+        />
+
+        <p>
+          Si je n'ai pas réussi à intégrer une école d'ingénieur ou alors si je
+          n'ai pas réussi à obtenir un poste avec le second métier, je
+          souhaiterai être Administrateur ou Ingénieur Réseau.
+        </p>
+
+        <p id="reseaux-plus" class="d-none">
+          Le rôle de l'Administrateur réseau est de garantir le bon
+          fonctionnement, l’optimisation et la sécurité des réseaux
+          informatiques d’une entreprise. Il doit résoudre les anomalies réseau
+          rapidement, analyser et optimiser la performance du réseau, sécuriser
+          les données et gérer les accès utilisateurs ou encore Choisir,
+          installer et maintenir le matériel informatique. Les diplômes
+          recommandés sont BTS SIN (BAC+2), BUT R&T (BAC+3) ou encore un master
+          informatique (BAC+5) ou même une école d'ingénieur comme l'ENSIBS.
+          Niveau salaire, un débutant obient 25 000 /30 000 € brut/an (≈ 1 600 –
+          1 950 € net/mois), un expérimenté : 35 000 – 40 000 € brut/an (≈ 2 600
+          € net/mois) et un responsable : Jusqu’à 40 000 €+ brut/an.
+        </p>
+
+        <button
+          class="btn btn-outline-secondary"
+          onclick="lirePlus('reseaux-plus')"
+        >
+          Lire plus
+        </button>
+
+        <div class="mt-4">
+          <button
+            class="btn btn-sm btn-success"
+            onclick="ScrollVersProchaineSection('section-soc')"
+          >
+            Étape suivante
+          </button>
+        </div>
+      </section>
+
+      <!-- SECTION 4 — ANALYSTE SOC -->
+      <section id="section-soc" class="container py-5">
+        <h2 class="fw-bold mb-3">Analyste SOC</h2>
+
+        <img
+          src="./img/ppp-analyste-soc.webp"
+          class="img-fluid rounded mb-3 w-50"
+          alt="Cybersécurité"
+        />
+
+        <p>
+          Après mon métier d'Administrateur Réseau ou après mon école
+          d'ingénieur, je souhaiterai faire le métier de mes rêves : Analyste
+          SOC.
+        </p>
+
+        <p id="soc-plus" class="d-none">
+          Son rôle est de surveiller un système et détecter des menaces,
+          analyser et gérer des incidents, faire du reporting et de
+          l'amélioration continue, communiquer et former sur les normes /
+          protocoles / bonnes pratiques de sécurité et enfin assurer une veille
+          technologique. Les diplomes requis sont un BAC+3 (BUT R&T, Licence
+          Informatique) ou un BAC+5 (Ingénieur en Informatique / Cyber ou Master
+          Informaique spécialité cybersécurité). Pour faire ce métier, il faut
+          avoir de bonnes connsaissances en anglais, très bien connaître les
+          protocoles réseau, les types d'attaques, des languages C, C++, python.
+          Le Salaire débutant est de 2 900€ brut/mois et un confirmé est à 4000€
+          brut/mois.
+        </p>
+
+        <button
+          class="btn btn-outline-secondary"
+          onclick="lirePlus('soc-plus')"
+        >
+          Lire plus
+        </button>
+
+        <div class="mt-4">
+          <button
+            class="btn btn-sm btn-success"
+            onclick="ScrollVersProchaineSection('section-forensic')"
+          >
+            Étape suivante
+          </button>
+        </div>
+      </section>
+
+      <!-- SECTION 5 — ANALYSTE FORENSIC -->
+      <section id="section-forensic" class="container py-5 mb-5">
+        <h2 class="fw-bold mb-3">Analyste Forensic</h2>
+
+        <img
+          src="./img/ppp-analyste-forensic.jpg"
+          class="img-fluid rounded mb-3 w-50"
+          alt="Investigation numérique"
+        />
+
+        <p>
+          Enfin, après être promu analyste SOC, je souhaiterai être Spécialisé
+          en Forensic . L'Analyste Forensic est "l'enquêteur numérique", c'est
+          le Sherlock Holmes de l'informatique.
+        </p>
+
+        <p id="forensic-plus" class="d-none">
+          Un analyste forensic va intervenir après une attaque informatique. Il
+          doit remonter à la trace du ou des attaquant(s). Pour cela, il va
+          essayer de regarder les logs du SI. Il faut qu'il trouve des preuves
+          juridiques car il travaille avec les services de Judiciaires, de
+          Police et Gendarmerie. Un Analyste Forensic peut servir pour une
+          enquête, un procès. J'ai envie de faire ce métier car il me fait
+          vraiment penser aux enquêtes policières que je regardais quand j'étais
+          petit mais en 2025 ! C'est à dire que l'on ne travaille qu'avec des
+          technologies récentes : les ordinateurs. On ne veut plus trouver le
+          meurtrier mais celui qui a piraté l'entreprise ! Souvent, un analyste
+          Forensic a été avant Analyste SOC car c'est plus une spécialisation de
+          ce métier. Pour le salaire, nous n'avons pas de chiffres exacts car
+          c'est un métier niche.
+        </p>
+
+        <button
+          class="btn btn-outline-secondary"
+          onclick="lirePlus('forensic-plus')"
+        >
+          Lire plus
+        </button>
+        <br />
+        <a class="btn btn-warning my-2 text-white" href="#" role="button"
+          >Revenir au début</a
+        >
+      </section>
     </main>
 
     <!-- Footer simple avec un copyright et mes coordonnées -->
@@ -133,5 +294,6 @@
         </p>
       </div>
     </footer>
+    <script src="./js/ppp.js"></script>
   </body>
 </html>
