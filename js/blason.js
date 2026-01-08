@@ -99,13 +99,15 @@ function activerReve(reve, couleurFond, couleurTexte) {
   cardReves.classList.remove(
     "bg-success-subtle",
     "bg-primary-subtle",
-    "bg-warning-subtle"
+    "bg-warning-subtle",
+    "bg-danger-subtle"
   );
 
   descriptionReve.classList.remove(
     "text-success",
     "text-primary",
-    "text-warning"
+    "text-warning",
+    "text-danger"
   );
 
   // 2. Ajout de la nouvelle couleur de fond

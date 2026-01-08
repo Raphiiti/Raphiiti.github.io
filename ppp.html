@@ -83,7 +83,7 @@
         class="vh-100 d-flex align-items-center justify-content-center text-center"
       >
         <div class="container">
-          <h1 class="display-4 fw-bold mb-4">
+          <h1 class="display-2 fw-bold mb-4">
             Mon Projet Professionnel Personnel
           </h1>
 
@@ -126,14 +126,14 @@
 
         <button
           class="btn btn-outline-secondary"
-          onclick="lirePlus('ensibs-plus')"
+          onclick="lirePlus('ensibs-plus', this)"
         >
           Lire plus
         </button>
 
         <div class="mt-4">
           <button
-            class="btn btn-sm btn-success"
+            class="btn btn-success"
             onclick="ScrollVersProchaineSection('section-reseaux')"
           >
             Étape suivante
@@ -157,7 +157,7 @@
           souhaiterai être Administrateur ou Ingénieur Réseau.
         </p>
 
-        <p id="reseaux-plus" class="d-none">
+        <p id="admin-plus" class="d-none">
           Le rôle de l'Administrateur réseau est de garantir le bon
           fonctionnement, l’optimisation et la sécurité des réseaux
           informatiques d’une entreprise. Il doit résoudre les anomalies réseau
@@ -173,14 +173,14 @@
 
         <button
           class="btn btn-outline-secondary"
-          onclick="lirePlus('reseaux-plus')"
+          onclick="lirePlus('admin-plus', this)"
         >
           Lire plus
         </button>
 
         <div class="mt-4">
           <button
-            class="btn btn-sm btn-success"
+            class="btn btn-success"
             onclick="ScrollVersProchaineSection('section-soc')"
           >
             Étape suivante
@@ -220,14 +220,14 @@
 
         <button
           class="btn btn-outline-secondary"
-          onclick="lirePlus('soc-plus')"
+          onclick="lirePlus('soc-plus', this)"
         >
           Lire plus
         </button>
 
         <div class="mt-4">
           <button
-            class="btn btn-sm btn-success"
+            class="btn btn-success"
             onclick="ScrollVersProchaineSection('section-forensic')"
           >
             Étape suivante
@@ -236,7 +236,7 @@
       </section>
 
       <!-- ANALYSTE FORENSIC -->
-      <section id="section-forensic" class="container py-5 mb-5">
+      <section id="section-forensic" class="container py-3 mb-5">
         <h2 class="fw-bold mb-3">Analyste Forensic</h2>
 
         <img
@@ -269,15 +269,18 @@
 
         <button
           class="btn btn-outline-secondary"
-          onclick="lirePlus('forensic-plus')"
+          onclick="lirePlus('forensic-plus', this)
+          "
         >
           Lire plus
         </button>
         <br />
-        <a class="btn btn-warning my-2 text-white" href="#" role="button"
-          >Revenir au début</a
-        >
       </section>
+      <div class="container">
+        <a class="btn btn-danger w-100 mb-4 text-white" href="#" role="button"
+          >⬆️ Revenir en haut ⬆️</a
+        >
+      </div>
     </main>
 
     <!-- Footer simple avec un copyright et mes coordonnées -->

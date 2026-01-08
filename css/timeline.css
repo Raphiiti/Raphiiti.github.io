@@ -49,30 +49,6 @@
   left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left-2::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right-2::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
 /* Fix the circle for containers on the right side */
 .right-2::after {
   left: -14px;
@@ -114,4 +90,21 @@
   .right-2 {
     left: 0%;
   }
+}
+
+/* =========================================
+   ANIMATION SCROLL (AJOUTÉ POUR L'EFFET)
+   ========================================= */
+
+/* État initial de la carte : invisible et décalée vers le bas */
+.card-hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out; /* Fluidité de l'animation */
+}
+
+/* État final : visible et à sa place */
+.card-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

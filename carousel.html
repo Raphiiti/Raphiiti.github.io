@@ -76,7 +76,14 @@
     </header>
 
     <main class="flex-grow-1 py-0">
-      <div class="container my-3">
+      <section class="container pb-2 pt-3 text-center">
+        <h2 class="display-2 fw-bold mb-2 text-danger">Carousel</h2>
+        <p class="text-danger">
+          Découvrez mes centres d'intérets qui forgent ma personalité via ce
+          carousel !
+        </p>
+      </section>
+      <section class="container mb-3">
         <!-- Carousel Bootstrap 
              Sources => https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
                      => http://getbootstrap.com/docs/5.3/components/carousel/#basic-examples
@@ -89,7 +96,6 @@
           class="carousel slide carousel-dark"
           data-bs-ride="carousel"
         >
-          <!-- Indicateurs pour savoir où l'on est rendu dans le carousel -->
           <div class="carousel-indicators">
             <button
               type="button"
@@ -99,34 +105,34 @@
             ></button>
             <button
               type="button"
-              data-bs-target="#moncarousel"
+              data-bs-target="#monCarousel"
               data-bs-slide-to="1"
             ></button>
             <button
               type="button"
-              data-bs-target="#moncarousel"
+              data-bs-target="#monCarousel"
               data-bs-slide-to="2"
             ></button>
             <button
               type="button"
-              data-bs-target="#moncarousel"
+              data-bs-target="#monCarousel"
               data-bs-slide-to="3"
             ></button>
             <button
               type="button"
-              data-bs-target="#moncarousel"
+              data-bs-target="#monCarousel"
               data-bs-slide-to="4"
             ></button>
             <button
               type="button"
-              data-bs-target="#moncarousel"
+              data-bs-target="#monCarousel"
               data-bs-slide-to="5"
             ></button>
           </div>
-          <!-- Photos du Carousel -->
+
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="ratio ratio-16x9">
+              <div class="ratio ratio-16x9 w-75 mx-auto">
                 <img
                   src="./img/carousel-acdc.jpeg"
                   class="d-block w-100 object-fit-contain"
@@ -134,17 +140,28 @@
                 />
               </div>
               <div class="carousel-caption d-none d-md-block">
-                <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
+                <div
+                  id="info-1"
+                  class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4 mb-2"
+                >
                   <h5 class="fw-bold text-white">AC/DC</h5>
                   <p class="text-light mb-0">
                     Mon Groupe de musique préféré où j'ai eu la chance de les
                     voir en concert !
                   </p>
                 </div>
+                <br />
+                <button
+                  class="btn btn-sm btn-light opacity-75"
+                  onclick="toggleDescription('info-1', this)"
+                >
+                  Cacher la description
+                </button>
               </div>
             </div>
+
             <div class="carousel-item">
-              <div class="ratio ratio-16x9">
+              <div class="ratio ratio-16x9 w-75 mx-auto">
                 <img
                   src="./img/carousel-mark-knopfler.jpg"
                   class="d-block w-100 object-fit-contain"
@@ -152,16 +169,27 @@
                 />
               </div>
               <div class="carousel-caption d-none d-md-block">
-                <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
+                <div
+                  id="info-2"
+                  class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4 mb-2"
+                >
                   <h5 class="fw-bold text-white">Mark Knopfler</h5>
                   <p class="text-light mb-0">
                     Mon guitariste préféré du groupe "Dire Straits"
                   </p>
                 </div>
+                <br />
+                <button
+                  class="btn btn-sm btn-light opacity-75"
+                  onclick="toggleDescription('info-2', this)"
+                >
+                  Cacher la description
+                </button>
               </div>
             </div>
+
             <div class="carousel-item">
-              <div class="ratio ratio-16x9">
+              <div class="ratio ratio-16x9 w-75 mx-auto">
                 <img
                   src="./img/carousel-james-bond.jpeg"
                   class="d-block w-100 object-fit-contain"
@@ -169,77 +197,116 @@
                 />
               </div>
               <div class="carousel-caption d-none d-md-block">
-                <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
+                <div
+                  id="info-3"
+                  class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4 mb-2"
+                >
                   <h5 class="fw-bold text-white">James Bond</h5>
                   <p class="text-light mb-0">
                     Ma saga de films préféré que je regarde avec mon père
                     (Surtout ceux avec Sean Connery)
                   </p>
                 </div>
+                <br />
+                <button
+                  class="btn btn-sm btn-light opacity-75"
+                  onclick="toggleDescription('info-3', this)"
+                >
+                  Cacher la description
+                </button>
               </div>
             </div>
+
             <div class="carousel-item">
-              <div class="ratio ratio-16x9">
+              <div class="ratio ratio-16x9 w-75 mx-auto">
                 <img
                   src="./img/carousel-srfc.jpg"
                   class="d-block w-100 object-fit-contain"
-                  alt="Stade Rennais Football Club (Victoire Coupe de France 2019)"
+                  alt="Stade Rennais"
                 />
               </div>
               <div class="carousel-caption d-none d-md-block">
-                <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
+                <div
+                  id="info-4"
+                  class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4 mb-2"
+                >
                   <h5 class="fw-bold text-white">
                     Le Stade Rennais Football Club
                   </h5>
                   <p class="text-light mb-0">
-                    Mon club de coeur ! Je suis abonné depuis la saison
-                    2015/2016 et j'ai eu la chance de les voir à Paris lors de
-                    leur victoire en Coupe de France en 2019 contre Paris !
+                    Mon club de coeur ! Abonné depuis 2015/2016 et témoin de la
+                    victoire en 2019 !
                   </p>
                 </div>
+                <br />
+                <button
+                  class="btn btn-sm btn-light opacity-75"
+                  onclick="toggleDescription('info-4', this)"
+                >
+                  Cacher la description
+                </button>
               </div>
             </div>
+
             <div class="carousel-item">
-              <div class="ratio ratio-16x9">
+              <div class="ratio ratio-16x9 w-75 mx-auto">
                 <img
                   src="./img/carousel-mont-saint-michel.jpg"
                   class="d-block w-100 object-fit-contain"
-                  alt="Mont Saint Michel + Voyage à Vélo"
+                  alt="Cyclisme"
                 />
               </div>
               <div class="carousel-caption d-none d-md-block">
-                <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
+                <div
+                  id="info-5"
+                  class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4 mb-2"
+                >
                   <h5 class="fw-bold text-white">Le cyclisme</h5>
                   <p class="text-light mb-0">
-                    Une de mes grandes passions depuis 2 ans. Je pratique ce
-                    sport pour la longue distance (100KM+) et j'aimerai faire du
-                    voyage à vélo pour réaliser mon rêve : Faire le Tour de la
-                    France en passant par les frontières naturelles.
+                    Passionné de longue distance. Mon rêve : faire le Tour de la
+                    France à vélo.
                   </p>
                 </div>
+                <br />
+                <button
+                  class="btn btn-sm btn-light opacity-75"
+                  onclick="toggleDescription('info-5', this)"
+                >
+                  Cacher la description
+                </button>
               </div>
             </div>
+
             <div class="carousel-item">
-              <div class="ratio ratio-16x9">
+              <div class="ratio ratio-16x9 w-75 mx-auto">
                 <img
                   src="./img/carousel-lofoten.webp"
-                  class="d-block w-100 h-100 object-fit-contain"
+                  class="d-block w-100 object-fit-contain"
                   alt="Îles Lofoten"
                 />
               </div>
-
               <div class="carousel-caption d-none d-md-block">
-                <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
+                <div
+                  id="info-6"
+                  class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4 mb-2"
+                >
                   <h5 class="fw-bold text-white">Les Îles Lofoten</h5>
                   <p class="text-light mb-0">
                     J'adorerai découvrir la Scandinavie et plus précisément ce
                     lieu magnifique !
                   </p>
                 </div>
+                <br />
+                <button
+                  class="btn btn-sm btn-light opacity-75"
+                  onclick="toggleDescription('info-6', this)"
+                >
+                  Cacher la description
+                </button>
               </div>
             </div>
           </div>
-          <!-- Bouton pour aller à la slide précédente -->
+
           <button
             class="carousel-control-prev"
             type="button"
@@ -248,8 +315,6 @@
           >
             <span class="carousel-control-prev-icon"></span>
           </button>
-
-          <!-- Bouton pour aller à la slide suivante -->
           <button
             class="carousel-control-next"
             type="button"
@@ -259,7 +324,7 @@
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer simple avec un copyright et mes coordonnées -->
@@ -276,5 +341,6 @@
         </p>
       </div>
     </footer>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

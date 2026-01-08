@@ -75,142 +75,221 @@
       </nav>
     </header>
 
-    <main class="flex-grow-1 py-5 bg-light">
-      <div class="container">
-        <!--  Cards => Source : https://mdbootstrap.com/docs/standard/components/cards/ -->
+    <main class="flex-grow-1 pb-5 bg-ligh">
+      <section class="container pb-2 pt-3 text-center">
+        <h2 class="display-2 fw-bold mb-2 text-danger">Cards</h2>
+        <p class="text-danger">
+          Découvrez les entreprises, les associations et les produits culturels
+          que j'affectionne !!
+        </p>
+      </section>
+
+      <section class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- CARD 1 : Jeff de Bruges -->
           <div class="col">
-            <div class="card h-100">
-              <div class="ratio ratio-16x9">
+            <button
+              class="card h-100 w-100"
+              id="card1"
+              onclick="retournerCarte('card1')"
+            >
+              <div class="card-uno">
                 <img
-                  src="./img/cards-jeff-de-bruges.png"
-                  class="card-img-top h-100 object-fit-contain pt-3"
-                  alt="Chocolaterie Jeff de Bruges"
+                  src="./img/cards-uno.jpg"
+                  class="img-fluid"
+                  alt="Carte UNO"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Jeff de Bruges</h5>
-                <p class="card-text">
-                  J'ai fait mon stage de troisième dans cette chocolaterie Jeff
-                  de Bruges pendant 3 jours. Cela m'a permis de découvrir le
-                  monde de l'entreprise pour la première fois.
-                </p>
+              <div class="card-contenu d-none">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="./img/cards-jeff-de-bruges.png"
+                    class="card-img-top object-fit-contain"
+                    alt="Jeff de Bruges"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Jeff de Bruges</h5>
+                  <p class="card-text">
+                    J'ai fait mon stage de troisième dans cette chocolaterie
+                    Jeff de Bruges pendant 3 jours.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="ratio ratio-16x9">
-                <img
-                  src="./img/cards-orange.jpg"
-                  class="card-img-top h-100 object-fit-contain pt-3"
-                  alt="Logo Entreprise Orange"
-                />
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title">Orange</h5>
-                <p class="card-text">
-                  Je souhaiterai trouver une alternance chez Orange car
-                  j'aimerai être technicien d'intervention. Je trouve que c'est
-                  un métier très technique, très enrichissant et que c'est un
-                  super poste pour commencer dans le monde professionnel.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="ratio ratio-16x9">
-                <img
-                  src="./img/cards-mjc-brequigny.png"
-                  class="card-img-top h-100 object-fit-contain pt-3"
-                  alt="Logo MJC-Brequigny"
-                />
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title">MJC-Brequigny</h5>
-                <p class="card-text">
-                  La MJC est une association pour les jeunes permettant de
-                  développer des projets ou des activités culturelles. C'est
-                  grâce à cette structure qu'avec mes ami.e.s, nous avons pu
-                  créer notre concert. C'est grâce à eux que nous avons aussi
-                  monté notre projet de voyage à vélo.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="ratio ratio-16x9">
-                <img
-                  src="./img/cards-wish-you-were-here.jpg"
-                  class="card-img-top h-100 object-fit-contain pt-3"
-                  alt="Pochette d'album 'Wish you Were Here'"
-                />
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title">Wish you Were Here - Pink Floyd</h5>
-                <p class="card-text">
-                  Voici un des albums qui a marqué mon lycée : Wish you Were
-                  Here du groupe de rock psychédélique : Pink Floyd. Cet album
-                  me transcende et me fait voyager lorsque j'écoute la chanson
-                  "Shine on you Crazy Diamond"
-                </p>
-              </div>
-            </div>
+            </button>
           </div>
 
+          <!-- CARD 2 : Orange -->
           <div class="col">
-            <div class="card h-100">
-              <div class="ratio ratio-16x9">
+            <button
+              class="card h-100 w-100"
+              id="card2"
+              onclick="retournerCarte('card2')"
+            >
+              <div class="card-uno">
                 <img
-                  src="./img/cards-guitare-electrique.jpg"
-                  class="card-img-top h-100 object-fit-contain pt-3"
-                  alt="Guitare électrique"
+                  src="./img/cards-uno.jpg"
+                  class="img-fluid"
+                  alt="Carte UNO"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Ma Guitare électrique</h5>
-                <p class="card-text">
-                  Voici un de mes objets préferés : ma guitare électrique !
-                  C'est une Jet JS-300 qui a une forme de Stratocaster ! Elle
-                  sonne super bien mais je n'ai pas le temps de jouer avec à
-                  cause des devoirs et du peu de temps libre que je me donne...
-                </p>
+              <div class="card-contenu d-none">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="./img/cards-orange.jpg"
+                    class="card-img-top object-fit-contain"
+                    alt="Orange"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Orange</h5>
+                  <p class="card-text">
+                    Je souhaiterais trouver une alternance chez Orange en tant
+                    que technicien d’intervention.
+                  </p>
+                </div>
               </div>
-            </div>
+            </button>
           </div>
+
+          <!-- CARD 3 : MJC -->
           <div class="col">
-            <div class="card h-100">
-              <div class="ratio ratio-16x9">
+            <button
+              class="card h-100 w-100"
+              id="card3"
+              onclick="retournerCarte('card3')"
+            >
+              <div class="card-uno">
                 <img
-                  src="./img/cards-appareil-photo.jpg"
-                  class="card-img-top h-100 object-fit-contain pt-3"
-                  alt="Appareil Photo"
+                  src="./img/cards-uno.jpg"
+                  class="img-fluid"
+                  alt="Carte UNO"
                 />
               </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Mon (ancien) appareil photo</h5>
-                <p class="card-text">
-                  Voici un objet qui a marqué mon enfance : l'appareil photo de
-                  mon père qui a aussi été le mien pendant un cours moment.. Mon
-                  père l'emmenait tout le temps pendant nos vacances, nos
-                  déplacements et c'est grâce à lui que j'ai de superbes photos
-                  de vacances et de supers souvenirs ! C'est un Canon EOS 400D
-                  de 2006. Il n'est malheureusement plus utilisable car il a
-                  rendu l'âme...
-                </p>
+              <div class="card-contenu d-none">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="./img/cards-mjc-brequigny.png"
+                    class="card-img-top object-fit-contain"
+                    alt="MJC Brequigny"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">MJC-Brequigny</h5>
+                  <p class="card-text">
+                    Association permettant de développer des projets culturels
+                    et de monter des concerts.
+                  </p>
+                </div>
               </div>
-            </div>
+            </button>
+          </div>
+
+          <!-- CARD 4 : Pink Floyd -->
+          <div class="col">
+            <button
+              class="card h-100 w-100"
+              id="card4"
+              onclick="retournerCarte('card4')"
+            >
+              <div class="card-uno">
+                <img
+                  src="./img/cards-uno.jpg"
+                  class="img-fluid"
+                  alt="Carte UNO"
+                />
+              </div>
+
+              <div class="card-contenu d-none">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="./img/cards-wish-you-were-here.jpg"
+                    class="card-img-top object-fit-contain"
+                    alt="Pink Floyd"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wish You Were Here – Pink Floyd</h5>
+                  <p class="card-text">
+                    Album qui a marqué mon lycée, notamment avec le titre Shine
+                    On You Crazy Diamond.
+                  </p>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <!-- CARD 5 : Guitare -->
+          <div class="col">
+            <button
+              class="card h-100 w-100"
+              id="card5"
+              onclick="retournerCarte('card5')"
+            >
+              <div class="card-uno">
+                <img
+                  src="./img/cards-uno.jpg"
+                  class="img-fluid"
+                  alt="Carte UNO"
+                />
+              </div>
+
+              <div class="card-contenu d-none">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="./img/cards-guitare-electrique.jpg"
+                    class="card-img-top object-fit-contain"
+                    alt="Guitare électrique"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Ma guitare électrique</h5>
+                  <p class="card-text">
+                    Une Jet JS-300 type Stratocaster, un de mes objets préférés.
+                  </p>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <!-- CARD 6 : Appareil photo -->
+          <div class="col">
+            <button
+              class="card h-100 w-100"
+              id="card6"
+              onclick="retournerCarte('card6')"
+            >
+              <div class="card-uno">
+                <img
+                  src="./img/cards-uno.jpg"
+                  class="img-fluid"
+                  alt="Carte UNO"
+                />
+              </div>
+
+              <div class="card-contenu d-none">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="./img/cards-appareil-photo.jpg"
+                    class="card-img-top object-fit-contain"
+                    alt="Appareil photo"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Mon ancien appareil photo</h5>
+                  <p class="card-text">
+                    Canon EOS 400D (2006), appareil marquant de mon enfance
+                    aujourd’hui hors service.
+                  </p>
+                </div>
+              </div>
+            </button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer simple avec un copyright et mes coordonnées -->
@@ -227,6 +306,6 @@
         </p>
       </div>
     </footer>
-    <script src="cards.js"></script>
+    <script src="./js/cards.js"></script>
   </body>
 </html>

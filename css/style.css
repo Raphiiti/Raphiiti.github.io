@@ -2,8 +2,8 @@
   /* --- VARIABLES BOOTSTRAP (Écrasées) --- */
 
   /* 1. Ta couleur Violette (Hexa + RGB) */
-  --bs-primary: #9d8df1;
-  --bs-primary-rgb: 157, 141, 241;
+  --bs-primary: #8572e4;
+  --bs-primary-rgb: 133, 114, 228;
 
   /* 2. Ton fond de page Gris-Bleu */
   --bs-body-bg: #00000020;
@@ -39,4 +39,8 @@
 a,
 footer a {
   color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
 }
