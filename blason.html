@@ -3,45 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="shortcut icon"
-      href="./img/accueil-photo.jpg"
-      type="image/x-icon"
-    >
+    <link rel="shortcut icon" href="./img/accueil-photo.jpg" type="image/x-icon">
     <title>Blason</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    >
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    >
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-
   <body class="d-flex flex-column min-vh-100 bg-light">
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3">
         <div class="container">
-          <a class="navbar-brand fw-bold text" href="accueil.html">
-            SAÉ 104
-            <span class="text-primary">SE PRÉSENTER SUR INTERNET</span></a
-          >
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+          <a class="navbar-brand fw-bold text" href="accueil.html"> SAÉ 104 <span class="text-primary">SE PRÉSENTER SUR INTERNET</span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-uppercase small fw-bold gap-3">
               <li class="nav-item">
@@ -73,127 +50,52 @@
         </div>
       </nav>
     </header>
-
     <main class="flex-grow-1">
       <!-- Citation 
            Source Gemini -->
-      <div
-        class="container-fluid p-0 mb-4 bg-primary text-white text-center py-5 shadow-sm"
-      >
+      <div class="container-fluid p-0 mb-4 bg-primary text-white text-center py-5 shadow-sm">
         <div class="container d-flex justify-content-center">
-          <h1 id="texte-citation" class="fw-bold fst-italic">
-  La vie, c’est comme une bicyclette, il faut avancer pour ne pas perdre l’équilibre.
-</h1>
-
+          <h1 id="texte-citation" class="fw-bold fst-italic"> La vie, c’est comme une bicyclette, il faut avancer pour ne pas perdre l’équilibre. </h1>
         </div>
       </div>
-
       <div class="container mb-5">
         <div class="row g-4">
           <!-- Mes qualités -->
           <div class="col-lg-6">
             <div class="card h-100 shadow border-0">
-              <div
-                class="card-header bg-success text-white fw-bold d-flex align-items-center"
-              >
+              <div class="card-header bg-success text-white fw-bold d-flex align-items-center">
                 <i class="bi bi-person-badge fs-4 me-2"></i> Mes Qualités
               </div>
               <div class="card-body bg-success-subtle text-center">
                 <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
-                  <button
-                    class="btn btn-outline-success"
-                    onmouseover="changerQualite('ensoleillé')"
-                    onmouseout="resetQualite()"
-                  >
-                    ☀️ Ensoleillé
-                  </button>
-
-                  <button
-                    class="btn btn-outline-success"
-                    onmouseover="changerQualite('curieux')"
-                    onmouseout="resetQualite()"
-                  >
-                    🧐 Curieux
-                  </button>
-
-                  <button
-                    class="btn btn-outline-success"
-                    onmouseover="changerQualite('sociable')"
-                    onmouseout="resetQualite()"
-                  >
-                    🤝 Sociable
-                  </button>
-
-                  <button
-                    class="btn btn-outline-success"
-                    onmouseover="changerQualite('ecoute')"
-                    onmouseout="resetQualite()"
-                  >
-                    👂 À l'écoute
-                  </button>
+                  <button class="btn btn-outline-success" onmouseover="changerQualite('ensoleillé')" onmouseout="resetQualite()"> ☀️ Ensoleillé </button>
+                  <button class="btn btn-outline-success" onmouseover="changerQualite('curieux')" onmouseout="resetQualite()"> 🧐 Curieux </button>
+                  <button class="btn btn-outline-success" onmouseover="changerQualite('sociable')" onmouseout="resetQualite()"> 🤝 Sociable </button>
+                  <button class="btn btn-outline-success" onmouseover="changerQualite('ecoute')" onmouseout="resetQualite()"> 👂 À l'écoute </button>
                 </div>
-
                 <div class="alert alert-light border shadow-sm">
-                  <p class="text-success fw-bold" id="texte-qualite">
-                    Passe ta souris sur une qualité !
-                  </p>
-                  <img
-                    id="img-qualite"
-                    src="./img/blason-qualite.png"
-                    alt="Image-Qualité"
-                    class="w-25"
-                  >
+                  <p class="text-success fw-bold" id="texte-qualite"> Passe ta souris sur une qualité ! </p>
+                  <img id="img-qualite" src="./img/blason-qualite.png" alt="Image-Qualité" class="w-25">
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Mes Passions -->
           <div class="col-lg-6">
             <div class="card h-100 shadow border-0">
-              <div
-                class="card-header bg-danger text-white fw-bold d-flex align-items-center"
-              >
+              <div class="card-header bg-danger text-white fw-bold d-flex align-items-center">
                 <i class="bi bi-heart-fill fs-4 me-2"></i> Ce que j'aime
               </div>
               <div class="card-body bg-danger-subtle text-center">
                 <div class="btn-group mb-3 w-100 shadow-sm">
-                  <button
-                    type="button"
-                    class="btn btn-outline-danger"
-                    onclick="changerPassion('musique')"
-                  >
-                    🎸 Musique
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-danger"
-                    onclick="changerPassion('cinema')"
-                  >
-                    🎬 Cinéma
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-danger"
-                    onclick="changerPassion('sport')"
-                  >
-                    ⚽ Sport
-                  </button>
+                  <button type="button" class="btn btn-outline-danger" onclick="changerPassion('musique')"> 🎸 Musique </button>
+                  <button type="button" class="btn btn-outline-danger" onclick="changerPassion('cinema')"> 🎬 Cinéma </button>
+                  <button type="button" class="btn btn-outline-danger" onclick="changerPassion('sport')"> ⚽ Sport </button>
                 </div>
-
-                <div
-                  class="ratio ratio-16x9 bg-dark rounded overflow-hidden shadow-sm border"
-                >
-                  <img
-                    id="img-passion"
-                    src="./img/blason-iron-maiden.png"
-                    class="object-fit-contain"
-                    alt="Passion"
-                  >
+                <div class="ratio ratio-16x9 bg-dark rounded overflow-hidden shadow-sm border">
+                  <img id="img-passion" src="./img/blason-iron-maiden.png" class="object-fit-contain" alt="Passion">
                 </div>
-                <p id="titre-passion" class="h5 mt-3 fw-bold text-danger">
-                  Iron Maiden - Le Groupe de Métal qui a changé mon lycée
-                </p>
+                <p id="titre-passion" class="h5 mt-3 fw-bold text-danger"> Iron Maiden - Le Groupe de Métal qui a changé mon lycée </p>
               </div>
             </div>
           </div>
@@ -201,210 +103,104 @@
           <div class="col-lg-6">
             <div class="card h-100 shadow border-0">
               <!-- HEADER -->
-              <div
-                class="card-header bg-info text-white fw-bold d-flex align-items-center"
-              >
-                <i class="bi bi-people-fill fs-4 me-2"></i>
-                Ceux qui comptent pour moi
+              <div class="card-header bg-info text-white fw-bold d-flex align-items-center">
+                <i class="bi bi-people-fill fs-4 me-2"></i> Ceux qui comptent pour moi
               </div>
-
               <div class="card-body bg-info-subtle">
                 <!-- Contenu Principal -->
-                <div
-                  id="monCarousel"
-                  class="carousel slide carousel-dark"
-                  data-bs-ride="carousel"
-                >
+                <div id="monCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
                   <!-- SLIDES 
                        Remplacement des h5 par des p .h5 pour W3C-->
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="ratio ratio-4x3">
-                        <img
-                          src="./img/blason-doudous.JPG"
-                          class="d-block w-100 object-fit-contain"
-                          alt="Mes doudous"
-                        >
+                        <img src="./img/blason-doudous.JPG" class="d-block w-100 object-fit-contain" alt="Mes doudous">
                       </div>
-
                       <div class="carousel-caption d-none d-md-block">
-                        <div
-                          class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4"
-                        >
+                        <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
                           <p class="h5 fw-bold text-info">Mes Doudous</p>
-                          <p class="text-info mb-0">
-                            Je les adore depuis que je suis petit et ils
-                            m'accompagnent comme mes mascottes !
-                          </p>
+                          <p class="text-info mb-0"> Je les adore depuis que je suis petit et ils m'accompagnent comme mes mascottes ! </p>
                         </div>
                       </div>
                     </div>
-
                     <div class="carousel-item">
                       <div class="ratio ratio-4x3">
-                        <img
-                          src="./img/blason-copains.jpg"
-                          class="d-block w-100 object-fit-contain"
-                          alt="Mes copains"
-                        >
+                        <img src="./img/blason-copains.jpg" class="d-block w-100 object-fit-contain" alt="Mes copains">
                       </div>
-
                       <div class="carousel-caption d-none d-md-block">
-                        <div
-                          class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4"
-                        >
+                        <div class="d-inline-block bg-dark bg-opacity-50 p-3 rounded-4">
                           <p class="h5 fw-bold text-info">Mes ami.e.s</p>
-                          <p class="text-info mb-0">
-                            Ma bande de potes musiciens que je connais depuis le
-                            lycée m'ont permis de développer ma personalité et
-                            m'ont accompagnés pendant 3 ans !
-                          </p>
+                          <p class="text-info mb-0"> Ma bande de potes musiciens que je connais depuis le lycée m'ont permis de développer ma personalité et m'ont accompagnés pendant 3 ans ! </p>
                         </div>
                       </div>
                     </div>
                   </div>
-
                   <!-- Indicateurs -->
                   <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#monCarousel"
-                      data-bs-slide-to="0"
-                      class="active"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#monCarousel"
-                      data-bs-slide-to="1"
-                    ></button>
+                    <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="1"></button>
                   </div>
-
                   <!-- Bouton pour aller à la slide précédente -->
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#monCarousel"
-                    data-bs-slide="prev"
-                  >
+                  <button class="carousel-control-prev" type="button" data-bs-target="#monCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                   </button>
                   <!-- Bouton pour aller à la slide suivante -->
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#monCarousel"
-                    data-bs-slide="next"
-                  >
+                  <button class="carousel-control-next" type="button" data-bs-target="#monCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Rêves -->
           <div class="col-lg-6">
             <div class="card h-100 shadow border-0 transition-bg">
-              <div
-                class="card-header bg-warning text-dark fw-bold d-flex align-items-center"
-              >
+              <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center">
                 <i class="bi bi-stars fs-4 me-2"></i> Mes Rêves
               </div>
               <div class="card-body bg-warning-subtle" id="card-reves">
                 <div class="list-group">
-                  <button
-                    type="button"
-                    class="list-group-item list-group-item-action d-flex align-items-center"
-                    onclick="activerReve('velo', 'bg-success-subtle', 'text-success')"
-                  >
-                    <i class="bi bi-bicycle fs-4 me-3 text-success"></i>
-                    Tour de France à Vélo
-                  </button>
-                  <button
-                    type="button"
-                    class="list-group-item list-group-item-action d-flex align-items-center"
-                    onclick="activerReve('maison', 'bg-primary-subtle', 'text-primary')"
-                  >
-                    <i class="bi bi-house-heart fs-4 me-3 text-primary"></i>
-                    Maison Écologique
-                  </button>
-                  <button
-                    type="button"
-                    class="list-group-item list-group-item-action d-flex align-items-center"
-                    onclick="activerReve('local', 'bg-danger-subtle', 'text-danger')"
-                  >
-                    <i class="bi bi-basket fs-4 me-3 text-danger"></i>
-                    Consommer Local
-                  </button>
+                  <button type="button" class="list-group-item list-group-item-action d-flex align-items-center" onclick="activerReve('velo', 'bg-success-subtle', 'text-success')">
+                    <i class="bi bi-bicycle fs-4 me-3 text-success"></i> Tour de France à Vélo </button>
+                  <button type="button" class="list-group-item list-group-item-action d-flex align-items-center" onclick="activerReve('maison', 'bg-primary-subtle', 'text-primary')">
+                    <i class="bi bi-house-heart fs-4 me-3 text-primary"></i> Maison Écologique </button>
+                  <button type="button" class="list-group-item list-group-item-action d-flex align-items-center" onclick="activerReve('local', 'bg-danger-subtle', 'text-danger')">
+                    <i class="bi bi-basket fs-4 me-3 text-danger"></i> Consommer Local </button>
                 </div>
-
-                <div
-                  class="mt-3 p-3 border rounded bg-white shadow-sm"
-                  id="description-reve"
-                >
-                  Sélectionne un rêve pour voir le détail.
-                </div>
+                <div class="mt-3 p-3 border rounded bg-white shadow-sm" id="description-reve"> Sélectionne un rêve pour voir le détail. </div>
               </div>
             </div>
           </div>
         </div>
-
         <!-- Animal Totem
              Source : https://getbootstrap.com/docs/5.3/components/modal/ -->
         <div class="text-center py-5 mt-4">
-          <button
-            class="btn btn-dark btn-lg rounded-pill px-5 shadow border-2 border-white"
-            data-bs-toggle="modal"
-            data-bs-target="#modalTotem"
-          >
-            🦃 Voir mon Animal Totem 🦃
-          </button>
+          <button class="btn btn-dark btn-lg rounded-pill px-5 shadow border-2 border-white" data-bs-toggle="modal" data-bs-target="#modalTotem"> 🦃 Voir mon Animal Totem 🦃 </button>
         </div>
       </div>
-
       <div class="modal fade" id="modalTotem">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content border-0 shadow-lg">
             <div class="modal-header bg-primary text-white">
               <p class="modal-title h5 w-100 text-center">🦃 GROSSE DINDE 🦃</p>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0">
-              <img
-                src="./img/blason-dindon.jpg"
-                class="img-fluid w-100"
-                alt="Dindon"
-              >
+              <img src="./img/blason-dindon.jpg" class="img-fluid w-100" alt="Dindon">
             </div>
             <div class="modal-footer justify-content-center bg-primary">
-              <p class="fst-italic mb-0 text-center text-white">
-                Voici mon Animal Totem
-              </p>
+              <p class="fst-italic mb-0 text-center text-white"> Voici mon Animal Totem </p>
             </div>
           </div>
         </div>
       </div>
     </main>
-
     <footer class="bg-dark text-white-50 text-center py-3 mt-auto">
       <div class="container small">
-        <p class="mb-0">
-          &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3
-          —
-          <a
-            href="mailto:raphael.bouchard@etudiant.univ-rennes.fr"
-            class="text-primary"
-            >raphael.bouchard@etudiant.univ-rennes.fr</a
-          >
+        <p class="mb-0"> &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3 — <a href="mailto:raphael.bouchard@etudiant.univ-rennes.fr" class="text-primary">raphael.bouchard@etudiant.univ-rennes.fr</a>
         </p>
       </div>
     </footer>
-
     <script src="./js/blason.js"></script>
   </body>
 </html>

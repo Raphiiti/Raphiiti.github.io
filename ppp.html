@@ -3,44 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="shortcut icon"
-      href="./img/accueil-photo.jpg"
-      type="image/x-icon"
-    >
+    <link rel="shortcut icon" href="./img/accueil-photo.jpg" type="image/x-icon">
     <title>Projet Personnel et Professionnel</title>
-
     <!-- Importation de bootstrap et de mon fichier css pour affiner ma palette de couleurs -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-
   <body class="d-flex flex-column min-vh-100 bg-light">
     <header>
       <!-- Création Navbar Source : https://getbootstrap.com/docs/5.0/components/navbar/ -->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3">
         <div class="container">
-          <a class="navbar-brand fw-bold text" href="accueil.html">
-            SAÉ 104
-            <span class="text-primary">SE PRÉSENTER SUR INTERNET</span></a
-          >
+          <a class="navbar-brand fw-bold text" href="accueil.html"> SAÉ 104 <span class="text-primary">SE PRÉSENTER SUR INTERNET</span>
+          </a>
           <!-- Bouton Pour transformer la navbar en menu hamburger lorsque le site est en moode mobile
                  Source : https://themeselection.com/how-to-create-bootstrap-hamburger-menu/#h-what-is-bootstrap-hamburger-menu + Gemini pour debugger -->
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-uppercase small fw-bold gap-3">
               <li class="nav-item">
@@ -53,18 +34,14 @@
                 <a class="nav-link" href="blason.html">Blason</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="ppp.html"
-                  >Projet Professionnel</a
-                >
+                <a class="nav-link active" href="ppp.html">Projet Professionnel</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="carousel.html">Carousel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="cards.html">Cards</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="timeline.html">Timeline</a>
               </li>
@@ -76,224 +53,65 @@
         </div>
       </nav>
     </header>
-
     <main class="flex-grow-1">
       <!-- TITRE -->
-      <section
-        class="vh-100 d-flex align-items-center justify-content-center text-center"
-      >
+      <section class="vh-100 d-flex align-items-center justify-content-center text-center">
         <div class="container">
-          <h1 class="display-2 fw-bold mb-4">
-            Mon Projet Professionnel Personnel
-          </h1>
-
-          <button
-            class="btn btn-danger btn-lg"
-            onclick="ScrollVersProchaineSection('section-ensibs')"
-          >
-            Découvrir mon projet
-          </button>
+          <h1 class="display-2 fw-bold mb-4"> Mon Projet Professionnel Personnel </h1>
+          <button class="btn btn-danger btn-lg" onclick="ScrollVersProchaineSection('section-ensibs')"> Découvrir mon projet </button>
         </div>
       </section>
-
       <!-- ENSIBS -->
       <section id="section-ensibs" class="container py-5">
         <h2 class="fw-bold mb-3">L’ENSIBS</h2>
-
-        <img
-          src="./img/ppp-enisbs.png"
-          class="img-fluid rounded mb-3"
-          alt="École d’ingénieur"
-        >
-
-        <p>
-          Voici l'école d'Ingénieur que je souhaite rejoindre ! C'est l'ENSIBS !
-          C'est une école d'Ingénieur qui appartient à l'UBS (Université
-          Bretagne Sud). Elle se situe à Vannes, dans le Morbihan.
-        </p>
-
-        <p id="ensibs-plus" class="d-none">
-          Tout d'abord, je veux continuer dans une école d'ingénieur après avoir
-          obtenu mon BUT3 R&T pour avoir plus de diplômes, un métier plus haut
-          dans la hiérarchie et pouvoir m'offir de plus grandes opportunités
-          comme pouvoir faire le métier que je veux faire plus tard. Je veux
-          rejoindre cette école d'ingénieur car elle est spécialisée en
-          cybersécurité. Je souhaiterai faire le parcours Cyberdéfense. Si je ne
-          suis pas accepté dans cette école, j'aimerai rejoindre l'ESIR ou sinon
-          faire un Master cybersécurité à l'ISTIC à Rennes parcours sécurité
-          logicielle et matérielle.
-        </p>
-
-        <button
-          class="btn btn-outline-info"
-          onclick="lirePlus('ensibs-plus', this)"
-        >
-          Lire plus
-        </button>
-
+        <img src="./img/ppp-enisbs.png" class="img-fluid rounded mb-3" alt="École d’ingénieur">
+        <p> Voici l'école d'Ingénieur que je souhaite rejoindre ! C'est l'ENSIBS ! C'est une école d'Ingénieur qui appartient à l'UBS (Université Bretagne Sud). Elle se situe à Vannes, dans le Morbihan. </p>
+        <p id="ensibs-plus" class="d-none"> Tout d'abord, je veux continuer dans une école d'ingénieur après avoir obtenu mon BUT3 R&T pour avoir plus de diplômes, un métier plus haut dans la hiérarchie et pouvoir m'offir de plus grandes opportunités comme pouvoir faire le métier que je veux faire plus tard. Je veux rejoindre cette école d'ingénieur car elle est spécialisée en cybersécurité. Je souhaiterai faire le parcours Cyberdéfense. Si je ne suis pas accepté dans cette école, j'aimerai rejoindre l'ESIR ou sinon faire un Master cybersécurité à l'ISTIC à Rennes parcours sécurité logicielle et matérielle. Les critères pour intégrer cette école sont les suivants : goût pour les systèmes complexes, la sécurité, et les projets techniques. Il y a aussi la Capacité d’apprentissage autonome, la rigueur et la persévérance pour suivre un cursus exigeant. Enfin, il faut une appétence pour les mathématiques, la logique, les réseaux et la programmation. </p>
+        <button class="btn btn-outline-info" onclick="lirePlus('ensibs-plus', this)"> Lire plus </button>
         <div class="mt-4">
-          <button
-            class="btn btn-success"
-            onclick="ScrollVersProchaineSection('section-reseaux')"
-          >
-            Étape suivante
-          </button>
+          <button class="btn btn-success" onclick="ScrollVersProchaineSection('section-reseaux')"> Étape suivante </button>
         </div>
       </section>
-
       <!--ADMIN / INGÉNIEUR RÉSEAUX -->
       <section id="section-reseaux" class="container py-5">
         <h2 class="fw-bold mb-3">Administrateur / Ingénieur Réseaux</h2>
-
-        <img
-          src="./img/ppp-administrateur-reseau.jpg"
-          class="img-fluid rounded mb-3 w-50"
-          alt="Réseaux informatiques"
-        >
-
-        <p>
-          Si je n'ai pas réussi à intégrer une école d'ingénieur ou alors si je
-          n'ai pas réussi à obtenir un poste avec le second métier, je
-          souhaiterai être Administrateur ou Ingénieur Réseau.
-        </p>
-
-        <p id="admin-plus" class="d-none">
-          Le rôle de l'Administrateur réseau est de garantir le bon
-          fonctionnement, l’optimisation et la sécurité des réseaux
-          informatiques d’une entreprise. Il doit résoudre les anomalies réseau
-          rapidement, analyser et optimiser la performance du réseau, sécuriser
-          les données et gérer les accès utilisateurs ou encore Choisir,
-          installer et maintenir le matériel informatique. Les diplômes
-          recommandés sont BTS SIN (BAC+2), BUT R&T (BAC+3) ou encore un master
-          informatique (BAC+5) ou même une école d'ingénieur comme l'ENSIBS.
-          Niveau salaire, un débutant obient 25 000 /30 000 € brut/an (≈ 1 600 –
-          1 950 € net/mois), un expérimenté : 35 000 – 40 000 € brut/an (≈ 2 600
-          € net/mois) et un responsable : Jusqu’à 40 000 €+ brut/an.
-        </p>
-
-        <button
-          class="btn btn-outline-info"
-          onclick="lirePlus('admin-plus', this)"
-        >
-          Lire plus
-        </button>
-
+        <img src="./img/ppp-administrateur-reseau.jpg" class="img-fluid rounded mb-3 w-50" alt="Réseaux informatiques">
+        <p> Si je n'ai pas réussi à intégrer une école d'ingénieur ou alors si je n'ai pas réussi à obtenir un poste avec le second métier, je souhaiterai être Administrateur ou Ingénieur Réseau. </p>
+        <p id="admin-plus" class="d-none"> Le rôle de l'Administrateur réseau est de garantir le bon fonctionnement, l’optimisation et la sécurité des réseaux informatiques d’une entreprise. Il doit résoudre les anomalies réseau rapidement, analyser et optimiser la performance du réseau, sécuriser les données et gérer les accès utilisateurs ou encore Choisir, installer et maintenir le matériel informatique. Les diplômes recommandés sont BTS SIN (BAC+2), BUT R&T (BAC+3) ou encore un master informatique (BAC+5) ou même une école d'ingénieur comme l'ENSIBS. Niveau salaire, un débutant obient 25 000 /30 000 € brut/an (≈ 1 600 – 1 950 € net/mois), un expérimenté : 35 000 – 40 000 € brut/an (≈ 2 600 € net/mois) et un responsable : Jusqu’à 40 000 €+ brut/an. Les critères de choix pour ce métier incluent une solide formation en informatique ou télécommunications (Bac+3 à Bac+5), la maîtrise des systèmes d’exploitation (Linux, Windows), des protocoles réseaux (TCP/IP, DNS, DHCP, VPN) et des outils de supervision. Des certifications comme CCNA, Linux+ ou CompTIA Network+ sont un plus. Sur le plan personnel, ce métier exige autonomie, esprit logique, capacité de résolution de problèmes et aptitude à communiquer efficacement avec les utilisateurs et les équipes techniques. Les postes peuvent se situer en entreprise, dans la DSI ou chez des prestataires spécialisés. </p>
+        <button class="btn btn-outline-info" onclick="lirePlus('admin-plus', this)"> Lire plus </button>
         <div class="mt-4">
-          <button
-            class="btn btn-success"
-            onclick="ScrollVersProchaineSection('section-soc')"
-          >
-            Étape suivante
-          </button>
+          <button class="btn btn-success" onclick="ScrollVersProchaineSection('section-soc')"> Étape suivante </button>
         </div>
       </section>
-
       <!-- ANALYSTE SOC -->
       <section id="section-soc" class="container py-5">
         <h2 class="fw-bold mb-3">Analyste SOC</h2>
-
-        <img
-          src="./img/ppp-analyste-soc.webp"
-          class="img-fluid rounded mb-3 w-50"
-          alt="Cybersécurité"
-        >
-
-        <p>
-          Après mon métier d'Administrateur Réseau ou après mon école
-          d'ingénieur, je souhaiterai faire le métier de mes rêves : Analyste
-          SOC.
-        </p>
-
-        <p id="soc-plus" class="d-none">
-          Son rôle est de surveiller un système et détecter des menaces,
-          analyser et gérer des incidents, faire du reporting et de
-          l'amélioration continue, communiquer et former sur les normes /
-          protocoles / bonnes pratiques de sécurité et enfin assurer une veille
-          technologique. Les diplomes requis sont un BAC+3 (BUT R&T, Licence
-          Informatique) ou un BAC+5 (Ingénieur en Informatique / Cyber ou Master
-          Informaique spécialité cybersécurité). Pour faire ce métier, il faut
-          avoir de bonnes connsaissances en anglais, très bien connaître les
-          protocoles réseau, les types d'attaques, des languages C, C++, python.
-          Le Salaire débutant est de 2 900€ brut/mois et un confirmé est à 4000€
-          brut/mois.
-        </p>
-
-        <button
-          class="btn btn-outline-info"
-          onclick="lirePlus('soc-plus', this)"
-        >
-          Lire plus
-        </button>
-
+        <img src="./img/ppp-analyste-soc.webp" class="img-fluid rounded mb-3 w-50" alt="Cybersécurité">
+        <p> Après mon métier d'Administrateur Réseau ou après mon école d'ingénieur, je souhaiterai faire le métier de mes rêves : Analyste SOC. </p>
+        <p id="soc-plus" class="d-none"> Son rôle est de surveiller un système et détecter des menaces, analyser et gérer des incidents, faire du reporting et de l'amélioration continue, communiquer et former sur les normes / protocoles / bonnes pratiques de sécurité et enfin assurer une veille technologique. Les diplomes requis sont un BAC+3 (BUT R&T, Licence Informatique) ou un BAC+5 (Ingénieur en Informatique / Cyber ou Master Informaique spécialité cybersécurité). Pour faire ce métier, il faut avoir de bonnes connsaissances en anglais, très bien connaître les protocoles réseau, les types d'attaques, des languages C, C++, python. Le Salaire débutant est de 2 900€ brut/mois et un confirmé est à 4000€ brut/mois.es critères de choix pour ce métier incluent un niveau Bac+3 à Bac+5 en cybersécurité, informatique ou réseaux, la maîtrise des outils de sécurité (SIEM, IDS/IPS, EDR), des connaissances réseau et systèmes, et des compétences en investigation et analyse de logs. Les certifications CompTIA Security+, CEH ou CISSP sont souvent valorisées. Il faut également posséder une grande rigueur, un sens analytique développé, la capacité à travailler sous stress et à communiquer clairement ses analyses pour la production de rapports ou l’escalade des incidents. </p>
+        <button class="btn btn-outline-info" onclick="lirePlus('soc-plus', this)"> Lire plus </button>
         <div class="mt-4">
-          <button
-            class="btn btn-success"
-            onclick="ScrollVersProchaineSection('section-forensic')"
-          >
-            Étape suivante
-          </button>
+          <button class="btn btn-success" onclick="ScrollVersProchaineSection('section-forensic')"> Étape suivante </button>
         </div>
       </section>
-
       <!-- ANALYSTE FORENSIC -->
       <section id="section-forensic" class="container py-3 mb-5">
         <h2 class="fw-bold mb-3">Analyste Forensic</h2>
-
-        <img
-          src="./img/ppp-analyste-forensic.jpg"
-          class="img-fluid rounded mb-3 w-50"
-          alt="Investigation numérique"
-        >
-
-        <p>
-          Enfin, après être promu analyste SOC, je souhaiterai être Spécialisé
-          en Forensic . L'Analyste Forensic est "l'enquêteur numérique", c'est
-          le Sherlock Holmes de l'informatique.
-        </p>
-
-        <p id="forensic-plus" class="d-none">
-          Un analyste forensic va intervenir après une attaque informatique. Il
-          doit remonter à la trace du ou des attaquant(s). Pour cela, il va
-          essayer de regarder les logs du SI. Il faut qu'il trouve des preuves
-          juridiques car il travaille avec les services de Judiciaires, de
-          Police et Gendarmerie. Un Analyste Forensic peut servir pour une
-          enquête, un procès. J'ai envie de faire ce métier car il me fait
-          vraiment penser aux enquêtes policières que je regardais quand j'étais
-          petit mais en 2025 ! C'est à dire que l'on ne travaille qu'avec des
-          technologies récentes : les ordinateurs. On ne veut plus trouver le
-          meurtrier mais celui qui a piraté l'entreprise ! Souvent, un analyste
-          Forensic a été avant Analyste SOC car c'est plus une spécialisation de
-          ce métier. Pour le salaire, nous n'avons pas de chiffres exacts car
-          c'est un métier niche.
-        </p>
-
-        <button
-          class="btn btn-outline-info"
-          onclick="lirePlus('forensic-plus', this)
-          "
-        >
-          Lire plus
-        </button>
+        <img src="./img/ppp-analyste-forensic.jpg" class="img-fluid rounded mb-3 w-50" alt="Investigation numérique">
+        <p> Enfin, après être promu analyste SOC, je souhaiterai être Spécialisé en Forensic . L'Analyste Forensic est "l'enquêteur numérique", c'est le Sherlock Holmes de l'informatique. </p>
+        <p id="forensic-plus" class="d-none"> Un analyste forensic va intervenir après une attaque informatique. Il doit remonter à la trace du ou des attaquant(s). Pour cela, il va essayer de regarder les logs du SI. Il faut qu'il trouve des preuves juridiques car il travaille avec les services de Judiciaires, de Police et Gendarmerie. Un Analyste Forensic peut servir pour une enquête, un procès. J'ai envie de faire ce métier car il me fait vraiment penser aux enquêtes policières que je regardais quand j'étais petit mais en 2025 ! C'est à dire que l'on ne travaille qu'avec des technologies récentes : les ordinateurs. On ne veut plus trouver le meurtrier mais celui qui a piraté l'entreprise ! Souvent, un analyste Forensic a été avant Analyste SOC car c'est plus une spécialisation de ce métier. Pour le salaire, nous n'avons pas de chiffres exacts car c'est un métier niche. Les critères de choix incluent une formation supérieure en cybersécurité ou informatique avec un intérêt marqué pour l’investigation technique, la connaissance des outils forensiques et des protocoles réseau, et la capacité à produire des rapports techniques détaillés. Les certifications spécialisées (GCFA, OSCP) sont un atout. Le métier exige minutie, patience, méthodologie rigoureuse, sens critique et curiosité technique pour analyser des systèmes complexes et comprendre des comportements malveillants. </p>
+        <button class="btn btn-outline-info" onclick="lirePlus('forensic-plus', this)
+          "> Lire plus </button>
         <br>
       </section>
       <div class="container">
-        <a class="btn btn-danger w-100 mb-4 text-white" href="#" role="button"
-          >⬆️ Revenir en haut ⬆️</a
-        >
+        <a class="btn btn-danger w-100 mb-4 text-white" href="#" role="button">⬆️ Revenir en haut ⬆️</a>
       </div>
     </main>
-
     <!-- Footer simple avec un copyright et mes coordonnées -->
     <footer class="bg-dark text-white-50 text-center py-3 mt-auto">
       <div class="container small">
-        <p class="mb-0">
-          &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3
-          —
-          <a
-            href="mailto:raphael.bouchard@etudiant.univ-rennes.fr"
-            class="text-primary"
-            >raphael.bouchard@etudiant.univ-rennes.fr</a
-          >
+        <p class="mb-0"> &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3 — <a href="mailto:raphael.bouchard@etudiant.univ-rennes.fr" class="text-primary">raphael.bouchard@etudiant.univ-rennes.fr</a>
         </p>
       </div>
     </footer>

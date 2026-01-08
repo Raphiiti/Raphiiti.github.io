@@ -1,72 +1,72 @@
-:root {
-  /* --- VARIABLES BOOTSTRAP (Écrasées) --- */
+  :root {
+    /* --- VARIABLES BOOTSTRAP (Écrasées) --- */
 
-  /* 1. Ta couleur Violette (Hexa + RGB) */
-  --bs-primary: #8572e4;
-  --bs-primary-rgb: 133, 114, 228;
+    /* 1. Ta couleur Violette (Hexa + RGB) */
+    --bs-primary: #8572e4;
+    --bs-primary-rgb: 133, 114, 228;
 
-  /* 2. Ton fond de page Gris-Bleu */
-  --bs-body-bg: #00000020;
+    /* 2. Ton fond de page Gris-Bleu */
+    --bs-body-bg: #00000020;
 
-  --bs-info: #4aa9e3;
-  --bs-info-rgb: 74, 169, 227;
-}
+    --bs-info: #4aa9e3;
+    --bs-info-rgb: 74, 169, 227;
+  }
 
-/* Application du fond */
-.bg-light {
-  background-color: var(--bs-body-bg) !important;
-}
+  /* Application du fond */
+  .bg-light {
+    background-color: var(--bs-body-bg) !important;
+  }
 
-/* --- ARRIÈRE-PLANS (Backgrounds) --- */
+  /* --- ARRIÈRE-PLANS (Backgrounds) --- */
 
-/* Ton Bleu Nuit pour Navbar & Footer */
-.bg-dark {
-  background-color: #1e2530 !important;
-}
+  /* Ton Bleu Nuit pour Navbar & Footer */
+  .bg-dark {
+    background-color: #1e2530 !important;
+  }
 
-/* --- TEXTES (Bleu Ciel Pastel) --- */
+  /* --- TEXTES (Bleu Ciel Pastel) --- */
 
-/* Appliqué au menu, logo et footer */
-.navbar-dark .navbar-brand,
-.navbar-dark .nav-link,
-.text-white-50 {
-  color: #cfe2ff !important;
-}
+  /* Appliqué au menu, logo et footer */
+  .navbar-dark .navbar-brand,
+  .navbar-dark .nav-link,
+  .text-white-50 {
+    color: #cfe2ff !important;
+  }
 
-/* --- INTERACTIONS & ACCENTS (Violet) --- */
+  /* --- INTERACTIONS & ACCENTS (Violet) --- */
 
-/* Lien actif + Survol souris + Logo + Mail */
-.navbar-dark .nav-link.active,
-.navbar-dark .nav-link:hover,
-.navbar-dark .navbar-brand span,
-a,
-footer a {
-  color: var(--bs-primary) !important;
-}
+  /* Lien actif + Survol souris + Logo + Mail */
+  .navbar-dark .nav-link.active,
+  .navbar-dark .nav-link:hover,
+  .navbar-dark .navbar-brand span,
+  a,
+  footer a {
+    color: var(--bs-primary) !important;
+  }
 
-.btn-primary {
-  background-color: var(--bs-primary);
-}
+  .btn-primary {
+    background-color: var(--bs-primary);
+  }
 
-.text-info {
-  color: var(--bs-info) !important;
-}
+  .text-info {
+    color: var(--bs-info) !important;
+  }
 
-.btn-info,
-.bg-info {
-  background-color: var(--bs-info) !important ;
-}
+  .btn-info,
+  .bg-info {
+    background-color: var(--bs-info) !important ;
+  }
 
-.bg-info-subtle {
-  background-color: #95ccee !important;
-}
+  .bg-info-subtle {
+    background-color: #95ccee !important;
+  }
 
-.btn-outline-info {
-  border-color: #4aa9e3 !important;
-  color: var(--bs-info) !important;
-}
+  .btn-outline-info {
+    border-color: #4aa9e3 !important;
+    color: var(--bs-info) !important;
+  }
 
-.btn-outline-info:hover {
-  background-color: #4aa9e3 !important ;
-  color: white !important;
-}
+  .btn-outline-info:hover {
+    background-color: #4aa9e3 !important ;
+    color: white !important;
+  }

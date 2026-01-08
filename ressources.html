@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="shortcut icon"
-      href="./img/accueil-photo.jpg"
-      type="image/x-icon"
-    >
+    <link rel="shortcut icon" href="./img/accueil-photo.jpg" type="image/x-icon">
     <title>Ressources</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="./css/style.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-
   <body class="d-flex flex-column min-vh-100 bg-light">
     <header>
       <!-- Création Navbar Source : https://getbootstrap.com/docs/5.0/components/navbar/ -->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow border-bottom border-primary border-3">
         <div class="container">
-          <a class="navbar-brand fw-bold text" href="accueil.html">
-            SAÉ 104
-            <span class="text-primary">SE PRÉSENTER SUR INTERNET</span></a
-          >
+          <a class="navbar-brand fw-bold text" href="accueil.html"> SAÉ 104 <span class="text-primary">SE PRÉSENTER SUR INTERNET</span>
+          </a>
           <!-- Boutton Pour transformer la navbar en menu hamburger lorsque le site est en moode mobile
                  Source : https://themeselection.com/how-to-create-bootstrap-hamburger-menu/#h-what-is-bootstrap-hamburger-menu + Gemini pour debugger -->
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-uppercase small fw-bold gap-3">
               <li class="nav-item">
@@ -55,14 +35,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="ppp.html">Projet Professionnel</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="carousel.html">Carousel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="cards.html">Cards</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="timeline.html">Timeline</a>
               </li>
@@ -74,18 +52,11 @@
         </div>
       </nav>
     </header>
-
-    <main
-      class="container d-flex align-items-center justify-content-center py-5"
-    >
+    <main class="container d-flex align-items-center justify-content-center py-5">
       <!-- Création du tableau des ressources
            Source : https://getbootstrap.com/docs/5.0/content/tables/ -->
-      <table
-        class="table table-striped table-primary table-responsive caption-top table-hover"
-      >
-        <caption class="text-primary fw-bold">
-          Ressources Utilisées pour la création du site web
-        </caption>
+      <table class="table table-striped table-primary table-responsive caption-top table-hover">
+        <caption class="text-primary fw-bold"> Ressources Utilisées pour la création du site web </caption>
         <thead>
           <tr>
             <th scope="col">Page</th>
@@ -98,61 +69,35 @@
         <tbody>
           <tr>
             <td>1. Accueil</td>
-            <td><code>accueil.html</code></td>
+            <td>
+              <code>accueil.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-100">100%</div>
               </div>
             </td>
-            <td>
-              Template : <br>
+            <td> Template : <br>
               <ul class="list-unstyled">
                 <li class="mb-1">
-                  <a
-                    href="https://getbootstrap.com/docs/5.0/components/navbar/"
-                    target="_blank"
-                    >Création Navbar</a
-                  >
+                  <a href="https://getbootstrap.com/docs/5.0/components/navbar/" target="_blank">Création Navbar</a>
                 </li>
                 <li class="mb-1">
-                  <a
-                    href="https://themeselection.com/how-to-create-bootstrap-hamburger-menu/#h-what-is-bootstrap-hamburger-menu"
-                    target="_blank"
-                    >Bouton Menu hamburger lorsque le site est en moode
-                    mobile</a
-                  >
+                  <a href="https://themeselection.com/how-to-create-bootstrap-hamburger-menu/#h-what-is-bootstrap-hamburger-menu" target="_blank">Bouton Menu hamburger lorsque le site est en moode mobile</a>
                 </li>
                 <li class="mb-1">
-                  <a href="https://gemini.google.com/u/1/app" target="_blank"
-                    >Défnition de la Direction artistique</a
-                  >
+                  <a href="https://gemini.google.com/u/1/app" target="_blank">Défnition de la Direction artistique</a>
                 </li>
-              </ul>
-
-              Accueil : <br>
-              <a
-                href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php"
-                target="_blank"
-                >Doc Bootstrap Cards</a
-              >
+              </ul> Accueil : <br>
+              <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php" target="_blank">Doc Bootstrap Cards</a>
             </td>
-            <td>
-              J'ai commencé le projet par faire un template de ma page puis la
-              page d'accueil donc une partie des sources citées dans cette ligne
-              sont utilisées pour toutes les pages. <br >
-              Dans la partie hamburger ainsi que dans la partie cards, je me
-              suis principalement aidé de la documentation sauf que pour debug
-              quelques micro-fonctionnalités, j'ai utilisé Gemini. <br >De
-              plus, lorsque j'ai voulu changer les couleurs par défaut de
-              bootstrap, j'ai utilisé Gemini principalement pour trouver des
-              couleurs qui allaient bien par rapport à mes goûts et ce qui me
-              représente. Je n'ai utilisé que le css pour modifier les couleurs
-              des variables et classes bootstrap natives.
-            </td>
+            <td> J'ai commencé le projet par faire un template de ma page puis la page d'accueil donc une partie des sources citées dans cette ligne sont utilisées pour toutes les pages. <br> Dans la partie hamburger ainsi que dans la partie cards, je me suis principalement aidé de la documentation sauf que pour debug quelques micro-fonctionnalités, j'ai utilisé Gemini. <br>De plus, lorsque j'ai voulu changer les couleurs par défaut de bootstrap, j'ai utilisé Gemini principalement pour trouver des couleurs qui allaient bien par rapport à mes goûts et ce qui me représente. Je n'ai utilisé que le css pour modifier les couleurs des variables et classes bootstrap natives. </td>
           </tr>
           <tr>
             <td>2. CV</td>
-            <td><code>cv.html</code></td>
+            <td>
+              <code>cv.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-75">98%</div>
@@ -161,40 +106,23 @@
             <td>
               <ul class="list-unstyled">
                 <li class="mb-1">
-                  <a href="https://getbootstrap.com/docs/5.3/components/badge/"
-                    >Badges pour Soft Skills et les dates dans le contenu
-                    principal</a
-                  >
+                  <a href="https://getbootstrap.com/docs/5.3/components/badge/">Badges pour Soft Skills et les dates dans le contenu principal</a>
                 </li>
                 <li>
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/components/progress/#bar-sizing"
-                    >Barres de progression pour les compétences techniques</a
-                  >
+                  <a href="https://getbootstrap.com/docs/5.3/components/progress/#bar-sizing">Barres de progression pour les compétences techniques</a>
                 </li>
                 <li>
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/components/accordion/"
-                    target="_blank"
-                    >COMPÉTENCES ESSENTIELLES et ACs (Apprentissages Critiques)
-                  </a>
+                  <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank">COMPÉTENCES ESSENTIELLES et ACs (Apprentissages Critiques) </a>
                 </li>
               </ul>
             </td>
-            <td>
-              Utilisation de Gemini pour lui demander de transformer mon fichier
-              pdf en cv compatible web avec une règle importante : Utiliser le
-              plus possible des fonctionnalités Bootstrap afin de mettre en
-              avant le framework. Autre utilisation pour lui demander des idées
-              de fonctionnalités java script comme l'impression du fichier. Une
-              bonne partie des sources proviennent des autres pages (cards,
-              carousel) Les accordion ont été fait 100% en doc bootstrap ! Je
-              n'ai touché à rien c'était parfait !
-            </td>
+            <td> Utilisation de Gemini pour lui demander de transformer mon fichier pdf en cv compatible web avec une règle importante : Utiliser le plus possible des fonctionnalités Bootstrap afin de mettre en avant le framework. Autre utilisation pour lui demander des idées de fonctionnalités java script comme l'impression du fichier. Une bonne partie des sources proviennent des autres pages (cards, carousel) Les accordion ont été fait 100% en doc bootstrap ! Je n'ai touché à rien c'était parfait ! </td>
           </tr>
           <tr>
             <td>3. Blason</td>
-            <td><code>blason.html</code></td>
+            <td>
+              <code>blason.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-100">100%</div>
@@ -203,33 +131,20 @@
             <td>
               <ul class="list-unstyled">
                 <li>
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/components/modal/"
-                    target="_blank"
-                    >Animal Totem</a
-                  >
+                  <a href="https://getbootstrap.com/docs/5.3/components/modal/" target="_blank">Animal Totem</a>
                 </li>
                 <li>
-                  <a href="https://gemini.google.com/u/1/"
-                    >Citation effet "Machine à écrire"
-                  </a>
+                  <a href="https://gemini.google.com/u/1/">Citation effet "Machine à écrire" </a>
                 </li>
               </ul>
             </td>
-            <td>
-              Pour le blason, j'ai voulu utiliser de nombreuses fonctionnalités
-              Bootstrap. Pour cela, j'ai utilisé Gemini afin de maximiser le
-              nombre de fonctionnalités Bootstrap. Côté JS, j'ai voulu faire
-              différents effets pour chaque éléments sauf le caroussel et
-              l'animal totem. Je suis fier d'avoir trouvé l'idée de l'effet
-              machine à écrire. Pour le JS, Gemini m'a montré que innerHTML
-              n'était pas une bonne manière de coder car il y a des failles de
-              sécurité avec (XSS) donc j'ai changé ma manière de coder.
-            </td>
+            <td> Pour le blason, j'ai voulu utiliser de nombreuses fonctionnalités Bootstrap. Pour cela, j'ai utilisé Gemini afin de maximiser le nombre de fonctionnalités Bootstrap. Côté JS, j'ai voulu faire différents effets pour chaque éléments sauf le caroussel et l'animal totem. Je suis fier d'avoir trouvé l'idée de l'effet machine à écrire. Pour le JS, Gemini m'a montré que innerHTML n'était pas une bonne manière de coder car il y a des failles de sécurité avec (XSS) donc j'ai changé ma manière de coder. </td>
           </tr>
           <tr>
             <td>4. Projet professionnel</td>
-            <td><code>ppp.html</code></td>
+            <td>
+              <code>ppp.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-75">99%</div>
@@ -238,46 +153,29 @@
             <td>
               <ul class="list-unstyled">
                 <li>
-                  <a href="https://gemini.google.com/u/1/app" target="_blank"
-                    >JS pour changer de section (section.scrollIntoView({
-                    behavior: "smooth" });)
-                  </a>
+                  <a href="https://gemini.google.com/u/1/app" target="_blank">JS pour changer de section (section.scrollIntoView({ behavior: "smooth" });) </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www-ensibs.univ-ubs.fr/skins/ENSIBS/resources/img/logo.png"
-                    target="_blank"
-                    >Logo ENSIBS
-                  </a>
+                  <a href="https://www-ensibs.univ-ubs.fr/skins/ENSIBS/resources/img/logo.png" target="_blank">Logo ENSIBS </a>
                 </li>
                 <li>
-                  <a
-                    href="https://f.hellowork.com/obs-static-images/seo/ObsJob/administrateur-reseau.jpg"
-                    target="_blank"
-                    >Image Administrateur Réseau
-                  </a>
+                  <a href="https://f.hellowork.com/obs-static-images/seo/ObsJob/administrateur-reseau.jpg" target="_blank">Image Administrateur Réseau </a>
                 </li>
                 <li>
-                  <a
-                    href="https://storage.letudiant.fr/mediatheque/letudiant/1/8/2748418-analyste-soc-632x421.webp"
-                    target="_blank"
-                    >Image Analyse SOC
-                  </a>
+                  <a href="https://storage.letudiant.fr/mediatheque/letudiant/1/8/2748418-analyste-soc-632x421.webp" target="_blank">Image Analyse SOC </a>
                 </li>
                 <li>
-                  <a
-                    href="https://t4.ftcdn.net/jpg/16/57/07/15/240_F_1657071590_0h9HmouNBbeCKgpAqKz5k4L2tgTy7DBN.jpg"
-                    target="_blank"
-                    >Image Forensic
-                  </a>
+                  <a href="https://t4.ftcdn.net/jpg/16/57/07/15/240_F_1657071590_0h9HmouNBbeCKgpAqKz5k4L2tgTy7DBN.jpg" target="_blank">Image Forensic </a>
                 </li>
               </ul>
             </td>
-            <td>-</td>
+            <td>Pour le PPP, j'ai fait la structure tout seul et je me suis aidé de Gemini pour la logique JS.</td>
           </tr>
           <tr>
             <td>5. Carousel</td>
-            <td><code>carousel.html</code></td>
+            <td>
+              <code>carousel.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-100">100%</div>
@@ -286,29 +184,20 @@
             <td>
               <ul class="list-unstyled">
                 <li class="mb-1">
-                  <a
-                    href="https://www.w3schools.com/bootstrap/bootstrap_carousel.asp"
-                    target="_blank"
-                    >Doc W3Schools Carousel</a
-                  >
+                  <a href="https://www.w3schools.com/bootstrap/bootstrap_carousel.asp" target="_blank">Doc W3Schools Carousel</a>
                 </li>
                 <li>
-                  <a
-                    href="//getbootstrap.com/docs/5.3/components/carousel/#basic-examples"
-                    target="_blank"
-                    >Doc Bootstrap Carousel</a
-                  >
+                  <a href="//getbootstrap.com/docs/5.3/components/carousel/#basic-examples" target="_blank">Doc Bootstrap Carousel</a>
                 </li>
               </ul>
             </td>
-            <td>
-              Pour le JS, je me suis inspiré de la fonction en PPP pour afficher
-              plus
-            </td>
+            <td> Pour le JS, je me suis inspiré de la fonction en PPP pour afficher plus </td>
           </tr>
           <tr>
             <td>6. Cards</td>
-            <td><code>cards.html</code></td>
+            <td>
+              <code>cards.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-100">100%</div>
@@ -317,82 +206,63 @@
             <td>
               <ul class="list-unstyled">
                 <li>
-                  <a
-                    href="https://mdbootstrap.com/docs/standard/components/cards/"
-                    target="_blank"
-                    >Exemple de Cards dont j'ai pris presque l'intégralité du
-                    code</a
-                  >
+                  <a href="https://mdbootstrap.com/docs/standard/components/cards/" target="_blank">Exemple de Cards dont j'ai pris presque l'intégralité du code</a>
                 </li>
                 <li>
-                  <a
-                    href="https://fr.pinterest.com/pin/593771532165283081/"
-                    target="_blank"
-                    >Image Carte Uno</a
-                  >
+                  <a href="https://fr.pinterest.com/pin/593771532165283081/" target="_blank">Image Carte Uno</a>
                 </li>
               </ul>
             </td>
-            <td>
-              J'ai utilisé Gemini pour la partie responsive en rajoutant des
-              h-100 ou même pour que les images rendent bien en rajoutant des
-              "ratio", "object-fit-contain"
-            </td>
+            <td> J'ai utilisé Gemini pour la partie responsive en rajoutant des h-100 ou même pour que les images rendent bien en rajoutant des "ratio", "object-fit-contain" </td>
           </tr>
           <tr>
             <td>7. Timeline</td>
-            <td><code>timeline.html</code></td>
+            <td>
+              <code>timeline.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-100">100%</div>
               </div>
             </td>
             <td>
-              <a
-                href="https://mdbootstrap.com/docs/standard/extended/timeline/#"
-                target="_blank"
-                >Timeline (Exemple provenant de la communauté bootstrap)</a
-              >
+              <a href="https://mdbootstrap.com/docs/standard/extended/timeline/#" target="_blank">Timeline (Exemple provenant de la communauté bootstrap)</a>
             </td>
-            <td>
-              Inspiration totale du site, Catégorie : "Timeline with images"
-            </td>
+            <td> Inspiration totale du site, Catégorie : "Timeline with images" </td>
           </tr>
           <tr>
             <td>8. Ressources</td>
-            <td><code>ressources.html</code></td>
+            <td>
+              <code>ressources.html</code>
+            </td>
             <td>
               <div class="progress mb-3" role="progressbar">
                 <div class="progress-bar bg-primary w-75">98 %</div>
               </div>
             </td>
             <td>
-              <a
-                href="https://getbootstrap.com/docs/5.0/content/tables/"
-                target="_blank"
-                >Doc Bootstrap sur les tableaux</a
-              >
+              <a href="https://getbootstrap.com/docs/5.0/content/tables/" target="_blank">Doc Bootstrap sur les tableaux</a>
             </td>
-            <td>
-              Une partie assez rapide à effectuer car c'est basiquement ce que
-              nous devions faire lors de l'examen R109
+            <td> Une partie assez rapide à effectuer car c'est basiquement ce que nous devions faire lors de l'examen R109 </td>
+          </tr>
+          <tr>
+            <td>9. Annexe</td>
+            <td>-</td>
+            <td> - </td>
+            <td> Liens annexes : <br>
+              <a href="https://validator.w3.org/#validate_by_input" target="_blank">Validator W3C</a>
+              <a href="http://colormind.io/bootstrap/" target="_blank">Colormind pour la DA</a>
+              <a href="https://gemini.google.com/u/1/" target="_blank">Gemini pour le debug et trouver des idées de fonctions JS.</a>
             </td>
+            <td> Les technologies utilisées sont HTML5, JS Natif, CSS3 pour la DA, Bootstrap pour le style. </td>
           </tr>
         </tbody>
       </table>
     </main>
-
     <!-- Footer simple avec un copyright et mes coordonnées -->
     <footer class="bg-dark text-white-50 text-center py-3 mt-auto">
       <div class="container small">
-        <p class="mb-0">
-          &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3
-          —
-          <a
-            href="mailto:raphael.bouchard@etudiant.univ-rennes.fr"
-            class="text-primary"
-            >raphael.bouchard@etudiant.univ-rennes.fr</a
-          >
+        <p class="mb-0"> &copy; 2026 — <span class="fw-bold">BOUCHARD Raphaël</span> — Groupe 3 — <a href="mailto:raphael.bouchard@etudiant.univ-rennes.fr" class="text-primary">raphael.bouchard@etudiant.univ-rennes.fr</a>
         </p>
       </div>
     </footer>
