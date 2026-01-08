@@ -4,7 +4,7 @@ onload = function () {
   const elementCitation = document.getElementById("texte-citation");
   const phrase =
     "“La vie, c’est comme une bicyclette, il faut avancer pour ne pas perdre l’équilibre.”";
-
+  elementCitation.innerText = ""; //Permet d'être ok avec le W3 Validator pour ne pas avoir de h1 vide
   let index = 0;
 
   // Fonction qui s'appelle elle-même pour écrire lettre par lettre

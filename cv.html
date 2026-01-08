@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme=" ">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="shortcut icon"
       href="./img/accueil-photo.jpg"
       type="image/x-icon"
-    />
+    >
     <title>Curriculum Vitae</title>
 
     <!-- Importation de bootstrap et de mon fichier css pour affiner ma palette de couleurs -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
+    >
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
+    >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body class="d-flex flex-column min-vh-100 bg-light">
@@ -92,7 +92,7 @@
           <div class="col-8">
             <h1 class="fw-bold text-primary">Raphaël BOUCHARD</h1>
             <h2 class="h4 text-secondary">
-              RECHERCHE ALTERNANCE RENTRÉE 2026 <br />
+              RECHERCHE ALTERNANCE RENTRÉE 2026 <br >
               RÉSEAUX & TÉLÉCOMUNICATIONS
             </h2>
             <p class="lead mt-3">
@@ -112,7 +112,7 @@
                 src="./img/accueil-photo.jpg"
                 class="object-fit-cover w-100 h-100"
                 alt="Photo de profil"
-              />
+              >
             </div>
           </div>
         </div>
@@ -232,62 +232,55 @@
               </h3>
 
               <div class="row g-3">
-                <div class="col">
-                  <button
-                    type="button"
-                    class="card h-100 w-100 text-center border btn-link text-decoration-none text-dark"
-                    onclick="afficherHobby('music')"
-                  >
-                    <div class="card-body">
-                      <i
-                        class="bi bi-music-note-beamed fs-1 text-primary d-block mb-2"
-                      ></i>
-                      <h6 class="card-title fw-bold mb-0">Musique</h6>
-                    </div>
-                  </button>
-                </div>
+  <div class="col">
+    <button
+      type="button"
+      class="card h-100 w-100 text-center border btn btn-link text-decoration-none text-dark p-3"
+      onclick="afficherHobby('music')"
+    >
+      <i
+        class="bi bi-music-note-beamed fs-1 text-primary d-block mb-2"
+      ></i>
+      <span class="fw-bold d-block">Musique</span>
+    </button>
+  </div>
 
-                <div class="col-6">
-                  <button
-                    type="button"
-                    class="card h-100 w-100 text-center border btn-link text-decoration-none text-dark"
-                    onclick="afficherHobby('velo')"
-                  >
-                    <div class="card-body">
-                      <i
-                        class="bi bi-bicycle fs-1 text-success d-block mb-2"
-                      ></i>
-                      <h6 class="card-title fw-bold mb-0">Vélo</h6>
-                    </div>
-                  </button>
-                </div>
+  <div class="col-6">
+    <button
+      type="button"
+      class="card h-100 w-100 text-center border btn btn-link text-decoration-none text-dark p-3"
+      onclick="afficherHobby('velo')"
+    >
+      <i
+        class="bi bi-bicycle fs-1 text-success d-block mb-2"
+      ></i>
+      <span class="fw-bold d-block">Vélo</span>
+    </button>
+  </div>
 
-                <div class="col-6">
-                  <button
-                    type="button"
-                    class="card h-100 w-100 text-center border btn-link text-decoration-none text-dark"
-                    onclick="afficherHobby('photo')"
-                  >
-                    <div class="card-body">
-                      <i class="bi bi-camera fs-1 text-danger d-block mb-2"></i>
-                      <h6 class="card-title fw-bold mb-0">Photo</h6>
-                    </div>
-                  </button>
-                </div>
+  <div class="col-6">
+    <button
+      type="button"
+      class="card h-100 w-100 text-center border btn btn-link text-decoration-none text-dark p-3"
+      onclick="afficherHobby('photo')"
+    >
+      <i class="bi bi-camera fs-1 text-danger d-block mb-2"></i>
+      <span class="fw-bold d-block">Photo</span>
+    </button>
+  </div>
 
-                <div class="col-6">
-                  <button
-                    type="button"
-                    class="card h-100 w-100 text-center border btn-link text-decoration-none text-dark"
-                    onclick="afficherHobby('tech')"
-                  >
-                    <div class="card-body">
-                      <i class="bi bi-people fs-1 text-info d-block mb-2"></i>
-                      <h6 class="card-title fw-bold mb-0">Bénévolat</h6>
-                    </div>
-                  </button>
-                </div>
-              </div>
+  <div class="col-6">
+    <button
+      type="button"
+      class="card h-100 w-100 text-center border btn btn-link text-decoration-none text-dark p-3"
+      onclick="afficherHobby('tech')"
+    >
+      <i class="bi bi-people fs-1 text-info d-block mb-2"></i>
+      <span class="fw-bold d-block">Bénévolat</span>
+    </button>
+  </div>
+</div>
+
 
               <div id="description-container" class="mt-4 d-none">
                 <div class="alert alert-primary border-0 shadow-sm">
@@ -297,7 +290,7 @@
               </div>
             </section>
 
-            <section>
+            <div>
               <button onclick="imprimerCV()" class="btn btn-primary w-100 my-2">
                 🖨️ Imprimer le CV
               </button>
@@ -308,7 +301,7 @@
               >
                 <i class="bi bi-download"></i> Télécharger mon CV
               </a>
-            </section>
+            </div>
           </div>
 
           <!-- Modal en popup -->
@@ -316,7 +309,7 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content bg-info-subtle">
                 <div class="modal-header">
-                  <h5 class="modal-titre" id="modalTitre"></h5>
+                  <p class="modal-titre h5" id="modalTitre"></p>
                   <button
                     type="button"
                     class="btn-close"
@@ -520,27 +513,27 @@
                         l'électricité afin d'intervenir sur des équipements de
                         réseaux et télécommunications</strong
                       >
-                      <br />
+                      <br>
                       Ressource R104 => Apprendre les lois de Kirchoff +
                       Manipuler des composants (résistances, condensateur,
                       circuit CR) et du matériel électronique (GBF, Osciloscope,
                       Boitier AOIP)
-                      <br />
+                      <br>
                       <strong
                         >AC11.02 Comprendre l'architecture des systèmes
                         numériques et les principes du codage de
                         l'information</strong
                       >
-                      <br />
+                      <br>
                       Ressource R106 => Compréhension du fonctionnement d'un
                       ordinateur et du codage des données en binaire et
                       hexadécimal
-                      <br />
+                      <br>
                       <strong
                         >AC11.03 Configurer les fonctions de base du réseau
                         local</strong
                       >
-                      <br />
+                      <br>
                       Ressource R101, R102, R103 => Découverte des bases d'un
                       réseau local, des protocoles réseaux qui fonctionnent avec
                       (IP, STP, DHCP, ARP, ICMP...) et simulation d'un réseau
@@ -573,7 +566,7 @@
                     <div class="accordion-body bg-warning-subtle">
                       <strong
                         >AC12.03 Déployer des supports de transmission</strong
-                      ><br />
+                      ><br>
                       Ressource R105 et SAé 103 => Projet Câblage d'une salle
                       avec une simulation d'entretien professionel chez un
                       client + Étudier des systèmes de transmissions cuivre et
@@ -608,14 +601,14 @@
                         >AC 13.01 => Utiliser un système informatique et ses
                         outils</strong
                       >
-                      <br />
+                      <br>
                       Ressource R108 => Administation Système Windows et Linux
-                      <br />
+                      <br>
                       <strong
                         >AC 13.02 => Lire, exécuter, corriger et modifier un
                         programme</strong
                       >
-                      <br />
+                      <br>
                       Ressources R107, R108, R109, SAé104 et SAé105 =>
                       Apprentissage des languages de programmation, balisage et
                       scripting suivants : Python et Java (R107 et SAé105 pour
@@ -626,7 +619,7 @@
                         >AC 13.04 => Connaitre l'architecture et les
                         technologies d'un site Web</strong
                       >
-                      <br />
+                      <br>
                       Ressource R109 et SAé104 => Apprentissage des langages
                       HTML/CSS/JS et le framework Bootstrap (R109 et SAé104) où
                       l'on a codé un site web Personnel (celui-ci) mêlant ces
